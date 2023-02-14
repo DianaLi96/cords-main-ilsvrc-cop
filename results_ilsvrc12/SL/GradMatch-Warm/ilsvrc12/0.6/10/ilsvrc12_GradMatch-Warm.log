@@ -1,0 +1,154 @@
+[09/08 01:35:51] train_sl INFO: DotMap(setting='SL', is_reg=False, dataset=DotMap(name='ilsvrc12', datadir='/export/home/personal/wangjiaxing/Projects/data_selection/datasets/ilsvrc12/imagenet', feature='dss', type='image'), dataloader=DotMap(shuffle=True, batch_size=512, pin_memory=True), model=DotMap(architecture='ResNet18', type='pre-defined', numclasses=1000), ckpt=DotMap(is_load=False, is_save=True, dir='results_ilsvrc12/', save_every=10), loss=DotMap(type='CrossEntropyLoss', use_sigmoid=False), optimizer=DotMap(type='sgd', momentum=0.9, lr=0.1, weight_decay=0.0001, nesterov=True), scheduler=DotMap(type='multi_step'), dss_args=DotMap(type='GradMatch-Warm', fraction=0.6, select_every=10, lam=0, selection_type='PerBatch', v1=True, valid=False, eps=1e-100, linear_layer=True, kappa=0.0833), train_args=DotMap(num_epochs=120, device='cuda', print_every=1, results_dir='results_ilsvrc12/', print_args=['tst_loss', 'tst_acc', 'time'], return_args=[]))
+[09/08 01:41:01] train_sl INFO: DotMap(setting='SL', is_reg=False, dataset=DotMap(name='ilsvrc12', datadir='/export/home/personal/wangjiaxing/Projects/data_selection/datasets/ilsvrc12/imagenet', feature='dss', type='image'), dataloader=DotMap(shuffle=True, batch_size=512, pin_memory=True), model=DotMap(architecture='ResNet18', type='pre-defined', numclasses=1000), ckpt=DotMap(is_load=False, is_save=True, dir='results_ilsvrc12/', save_every=10), loss=DotMap(type='CrossEntropyLoss', use_sigmoid=False), optimizer=DotMap(type='sgd', momentum=0.9, lr=0.1, weight_decay=0.0001, nesterov=True), scheduler=DotMap(type='multi_step'), dss_args=DotMap(type='GradMatch-Warm', fraction=0.6, select_every=10, lam=0, selection_type='PerBatch', v1=True, valid=False, eps=1e-100, linear_layer=True, kappa=0.0833), train_args=DotMap(num_epochs=120, device='cuda', print_every=1, results_dir='results_ilsvrc12/', print_args=['tst_loss', 'tst_acc', 'time'], return_args=[]))
+[09/08 04:20:48] train_sl INFO: Epoch: 1 , Test Loss: 4.209377312011719 , Test Accuracy: 0.1841 , Timing: 9836.168215036392
+[09/08 07:03:34] train_sl INFO: Epoch: 2 , Test Loss: 3.12518048828125 , Test Accuracy: 0.32854 , Timing: 9716.57349729538
+[09/08 09:47:02] train_sl INFO: Epoch: 3 , Test Loss: 2.918230621337891 , Test Accuracy: 0.36352 , Timing: 9757.104816913605
+[09/08 12:29:50] train_sl INFO: Epoch: 4 , Test Loss: 2.6809363818359375 , Test Accuracy: 0.40244 , Timing: 9719.17296552658
+[09/08 15:15:43] train_sl INFO: Epoch: 5 , Test Loss: 2.5083029614257812 , Test Accuracy: 0.43888 , Timing: 9902.941202402115
+[09/08 18:02:49] train_sl INFO: Epoch: 6 , Test Loss: 2.563733337402344 , Test Accuracy: 0.43314 , Timing: 9976.373660564423
+[09/08 18:03:39] train_sl INFO: Epoch: 7 , Test Loss: 2.563733337402344 , Test Accuracy: 0.43314 , Timing: 0.00037598609924316406
+[09/08 18:04:29] train_sl INFO: Epoch: 8 , Test Loss: 2.563733337402344 , Test Accuracy: 0.43314 , Timing: 0.0003764629364013672
+[09/08 18:05:18] train_sl INFO: Epoch: 9 , Test Loss: 2.563733337402344 , Test Accuracy: 0.43314 , Timing: 0.0004146099090576172
+[09/08 19:45:09] train_sl INFO: Epoch: 10 , Test Loss: 2.3216333984375 , Test Accuracy: 0.46624 , Timing: 5939.604589939117
+[09/08 19:45:09] train_sl INFO: Model checkpoint saved at epoch: 10
+[09/08 20:08:04] train_sl INFO: Epoch: 11, GradMatch subset selection finished, takes 1375.1363. 
+[09/08 21:46:48] train_sl INFO: Epoch: 11 , Test Loss: 2.3180354150390623 , Test Accuracy: 0.46914 , Timing: 7249.517020225525
+[09/08 23:24:14] train_sl INFO: Epoch: 12 , Test Loss: 2.329890228271484 , Test Accuracy: 0.4692 , Timing: 5796.096418380737
+[09/09 01:01:19] train_sl INFO: Epoch: 13 , Test Loss: 2.288447995605469 , Test Accuracy: 0.4753 , Timing: 5775.3260316848755
+[09/09 02:37:32] train_sl INFO: Epoch: 14 , Test Loss: 2.327543038330078 , Test Accuracy: 0.47074 , Timing: 5721.859403848648
+[09/09 04:13:58] train_sl INFO: Epoch: 15 , Test Loss: 2.315401853027344 , Test Accuracy: 0.4727 , Timing: 5734.738278627396
+[09/09 05:50:50] train_sl INFO: Epoch: 16 , Test Loss: 2.225791497802734 , Test Accuracy: 0.49016 , Timing: 5761.943069934845
+[09/09 07:27:46] train_sl INFO: Epoch: 17 , Test Loss: 2.22552294921875 , Test Accuracy: 0.49018 , Timing: 5766.149573087692
+[09/09 09:04:55] train_sl INFO: Epoch: 18 , Test Loss: 2.253744456787109 , Test Accuracy: 0.48178 , Timing: 5776.857067108154
+[09/09 10:43:11] train_sl INFO: Epoch: 19 , Test Loss: 2.2615308459472656 , Test Accuracy: 0.48388 , Timing: 5847.0275502204895
+[09/09 12:24:32] train_sl INFO: Epoch: 20 , Test Loss: 2.227228591308594 , Test Accuracy: 0.49258 , Timing: 6030.594885826111
+[09/09 12:24:32] train_sl INFO: Model checkpoint saved at epoch: 20
+[09/09 12:50:12] train_sl INFO: Epoch: 21, GradMatch subset selection finished, takes 1539.7633. 
+[09/09 14:35:40] train_sl INFO: Epoch: 21 , Test Loss: 2.164359203491211 , Test Accuracy: 0.50408 , Timing: 7816.562080144882
+[09/09 16:21:40] train_sl INFO: Epoch: 22 , Test Loss: 2.282879403076172 , Test Accuracy: 0.47962 , Timing: 6308.2669360637665
+[09/09 18:04:15] train_sl INFO: Epoch: 23 , Test Loss: 2.2883678533935545 , Test Accuracy: 0.47724 , Timing: 6103.555313825607
+[09/09 19:49:04] train_sl INFO: Epoch: 24 , Test Loss: 2.199052313232422 , Test Accuracy: 0.49518 , Timing: 6237.770343542099
+[09/09 21:38:15] train_sl INFO: Epoch: 25 , Test Loss: 2.1978797680664064 , Test Accuracy: 0.4933 , Timing: 6499.765602350235
+[09/09 23:26:57] train_sl INFO: Epoch: 26 , Test Loss: 2.1692026641845703 , Test Accuracy: 0.50232 , Timing: 6470.232628107071
+[09/10 01:17:50] train_sl INFO: Epoch: 27 , Test Loss: 2.234353643798828 , Test Accuracy: 0.49164 , Timing: 6601.349741220474
+[09/10 03:02:20] train_sl INFO: Epoch: 28 , Test Loss: 2.227712722167969 , Test Accuracy: 0.48946 , Timing: 6218.564007520676
+[09/10 04:42:51] train_sl INFO: Epoch: 29 , Test Loss: 2.2583288305664064 , Test Accuracy: 0.49052 , Timing: 5979.708401441574
+[09/10 06:24:24] train_sl INFO: Epoch: 30 , Test Loss: 2.136964030761719 , Test Accuracy: 0.50628 , Timing: 6043.102085113525
+[09/10 06:24:24] train_sl INFO: Model checkpoint saved at epoch: 30
+[09/10 06:46:45] train_sl INFO: Epoch: 31, GradMatch subset selection finished, takes 1341.2738. 
+[09/10 08:27:38] train_sl INFO: Epoch: 31 , Test Loss: 2.1476109924316407 , Test Accuracy: 0.50278 , Timing: 7343.50820851326
+[09/10 10:08:17] train_sl INFO: Epoch: 32 , Test Loss: 2.271009805908203 , Test Accuracy: 0.48192 , Timing: 5988.960579395294
+[09/10 11:48:27] train_sl INFO: Epoch: 33 , Test Loss: 2.1733142358398436 , Test Accuracy: 0.50554 , Timing: 5958.88635635376
+[09/10 13:27:57] train_sl INFO: Epoch: 34 , Test Loss: 2.1297057373046875 , Test Accuracy: 0.50936 , Timing: 5918.421770811081
+[09/10 15:04:11] train_sl INFO: Epoch: 35 , Test Loss: 2.1807344525146486 , Test Accuracy: 0.50172 , Timing: 5724.209542512894
+[09/10 16:40:33] train_sl INFO: Epoch: 36 , Test Loss: 2.1889818438720705 , Test Accuracy: 0.49662 , Timing: 5731.592206001282
+[09/10 18:21:39] train_sl INFO: Epoch: 37 , Test Loss: 2.2122650854492187 , Test Accuracy: 0.49392 , Timing: 6015.502147912979
+[09/10 20:01:46] train_sl INFO: Epoch: 38 , Test Loss: 2.100170426025391 , Test Accuracy: 0.51402 , Timing: 5955.896903038025
+[09/10 21:42:00] train_sl INFO: Epoch: 39 , Test Loss: 2.180478361816406 , Test Accuracy: 0.49642 , Timing: 5963.97225522995
+[09/10 23:22:49] train_sl INFO: Epoch: 40 , Test Loss: 2.140085860595703 , Test Accuracy: 0.5067 , Timing: 5998.8194460868835
+[09/10 23:22:49] train_sl INFO: Model checkpoint saved at epoch: 40
+[09/10 23:46:34] train_sl INFO: Epoch: 41, GradMatch subset selection finished, takes 1424.3537. 
+[09/11 01:29:32] train_sl INFO: Epoch: 41 , Test Loss: 1.640222886352539 , Test Accuracy: 0.61036 , Timing: 7551.965182065964
+[09/11 03:11:55] train_sl INFO: Epoch: 42 , Test Loss: 1.6076835418701172 , Test Accuracy: 0.61632 , Timing: 6092.365735054016
+[09/11 04:54:49] train_sl INFO: Epoch: 43 , Test Loss: 1.5817378466796874 , Test Accuracy: 0.6228 , Timing: 6123.106826305389
+[09/11 06:37:05] train_sl INFO: Epoch: 44 , Test Loss: 1.5676752801513671 , Test Accuracy: 0.62544 , Timing: 6084.526926994324
+[09/11 08:15:41] train_sl INFO: Epoch: 45 , Test Loss: 1.5572591046142579 , Test Accuracy: 0.62872 , Timing: 5865.847442626953
+[09/11 09:55:17] train_sl INFO: Epoch: 46 , Test Loss: 1.5474072302246094 , Test Accuracy: 0.6304 , Timing: 5925.145946025848
+[09/11 11:40:14] train_sl INFO: Epoch: 47 , Test Loss: 1.5596866088867187 , Test Accuracy: 0.62694 , Timing: 6244.465733528137
+[09/11 13:28:16] train_sl INFO: Epoch: 48 , Test Loss: 1.5404669018554686 , Test Accuracy: 0.632 , Timing: 6431.37104511261
+[09/11 15:13:23] train_sl INFO: Epoch: 49 , Test Loss: 1.540854698486328 , Test Accuracy: 0.63076 , Timing: 6255.736330747604
+[09/11 17:04:07] train_sl INFO: Epoch: 50 , Test Loss: 1.5502653857421875 , Test Accuracy: 0.63034 , Timing: 6593.3899302482605
+[09/11 17:04:07] train_sl INFO: Model checkpoint saved at epoch: 50
+[09/11 17:26:59] train_sl INFO: Epoch: 51, GradMatch subset selection finished, takes 1371.6956. 
+[09/11 19:10:28] train_sl INFO: Epoch: 51 , Test Loss: 1.5281015112304688 , Test Accuracy: 0.63446 , Timing: 7529.899242401123
+[09/11 20:53:43] train_sl INFO: Epoch: 52 , Test Loss: 1.5218339001464845 , Test Accuracy: 0.6366 , Timing: 6144.494043827057
+[09/11 22:44:36] train_sl INFO: Epoch: 53 , Test Loss: 1.5388573748779297 , Test Accuracy: 0.6306 , Timing: 6602.921140909195
+[09/12 00:23:21] train_sl INFO: Epoch: 54 , Test Loss: 1.538486392211914 , Test Accuracy: 0.63322 , Timing: 5875.141790151596
+[09/12 02:05:01] train_sl INFO: Epoch: 55 , Test Loss: 1.5204995141601563 , Test Accuracy: 0.63568 , Timing: 6048.893144607544
+[09/12 03:45:04] train_sl INFO: Epoch: 56 , Test Loss: 1.5283546435546875 , Test Accuracy: 0.63588 , Timing: 5951.803604125977
+[09/12 05:23:31] train_sl INFO: Epoch: 57 , Test Loss: 1.5339696600341797 , Test Accuracy: 0.63442 , Timing: 5856.889709472656
+[09/12 07:02:36] train_sl INFO: Epoch: 58 , Test Loss: 1.541872289428711 , Test Accuracy: 0.63306 , Timing: 5893.704370737076
+[09/12 08:41:30] train_sl INFO: Epoch: 59 , Test Loss: 1.5374111364746095 , Test Accuracy: 0.63288 , Timing: 5884.1712102890015
+[09/12 10:21:30] train_sl INFO: Epoch: 60 , Test Loss: 1.539132774658203 , Test Accuracy: 0.63402 , Timing: 5948.367650747299
+[09/12 10:21:30] train_sl INFO: Model checkpoint saved at epoch: 60
+[09/12 10:43:54] train_sl INFO: Epoch: 61, GradMatch subset selection finished, takes 1343.7552. 
+[09/12 12:34:02] train_sl INFO: Epoch: 61 , Test Loss: 1.527486245727539 , Test Accuracy: 0.63538 , Timing: 7901.81491112709
+[09/12 14:20:52] train_sl INFO: Epoch: 62 , Test Loss: 1.5273700445556642 , Test Accuracy: 0.63522 , Timing: 6357.867791175842
+[09/12 16:04:23] train_sl INFO: Epoch: 63 , Test Loss: 1.5305605242919922 , Test Accuracy: 0.63358 , Timing: 6161.3847324848175
+[09/12 17:44:37] train_sl INFO: Epoch: 64 , Test Loss: 1.5563312567138672 , Test Accuracy: 0.63066 , Timing: 5963.14230298996
+[09/12 19:24:32] train_sl INFO: Epoch: 65 , Test Loss: 1.5444527612304688 , Test Accuracy: 0.63186 , Timing: 5944.686589479446
+[09/12 21:09:23] train_sl INFO: Epoch: 66 , Test Loss: 1.5512342321777344 , Test Accuracy: 0.62914 , Timing: 6239.464387178421
+[09/12 22:52:14] train_sl INFO: Epoch: 67 , Test Loss: 1.5523279223632813 , Test Accuracy: 0.63136 , Timing: 6120.37251996994
+[09/13 00:38:08] train_sl INFO: Epoch: 68 , Test Loss: 1.5544546789550782 , Test Accuracy: 0.62986 , Timing: 6302.893955230713
+[09/13 02:20:36] train_sl INFO: Epoch: 69 , Test Loss: 1.5535635552978515 , Test Accuracy: 0.63112 , Timing: 6096.202590465546
+[09/13 04:04:11] train_sl INFO: Epoch: 70 , Test Loss: 1.5540826831054688 , Test Accuracy: 0.63056 , Timing: 6162.885694980621
+[09/13 04:04:11] train_sl INFO: Model checkpoint saved at epoch: 70
+[09/13 04:26:24] train_sl INFO: Epoch: 71, GradMatch subset selection finished, takes 1332.4607. 
+[09/13 06:09:01] train_sl INFO: Epoch: 71 , Test Loss: 1.5607281323242188 , Test Accuracy: 0.62908 , Timing: 7439.260412693024
+[09/13 07:51:22] train_sl INFO: Epoch: 72 , Test Loss: 1.5541054266357421 , Test Accuracy: 0.63062 , Timing: 6089.804200410843
+[09/13 09:32:02] train_sl INFO: Epoch: 73 , Test Loss: 1.5521406030273437 , Test Accuracy: 0.62958 , Timing: 5989.543422698975
+[09/13 11:12:11] train_sl INFO: Epoch: 74 , Test Loss: 1.5457260040283203 , Test Accuracy: 0.63022 , Timing: 5958.086773633957
+[09/13 12:58:14] train_sl INFO: Epoch: 75 , Test Loss: 1.562252661743164 , Test Accuracy: 0.6285 , Timing: 6310.618672132492
+[09/13 14:39:20] train_sl INFO: Epoch: 76 , Test Loss: 1.5466421801757813 , Test Accuracy: 0.63088 , Timing: 6015.579370737076
+[09/13 16:20:50] train_sl INFO: Epoch: 77 , Test Loss: 1.565403565673828 , Test Accuracy: 0.62586 , Timing: 6038.918000936508
+[09/13 18:04:41] train_sl INFO: Epoch: 78 , Test Loss: 1.566008666381836 , Test Accuracy: 0.62848 , Timing: 6180.165317296982
+[09/13 19:51:16] train_sl INFO: Epoch: 79 , Test Loss: 1.5952625982666016 , Test Accuracy: 0.62228 , Timing: 6344.497260570526
+[09/13 21:40:53] train_sl INFO: Epoch: 80 , Test Loss: 1.5706838861083985 , Test Accuracy: 0.6297 , Timing: 6525.734471797943
+[09/13 21:40:54] train_sl INFO: Model checkpoint saved at epoch: 80
+[09/13 22:04:49] train_sl INFO: Epoch: 81, GradMatch subset selection finished, takes 1435.0619. 
+[09/13 23:53:45] train_sl INFO: Epoch: 81 , Test Loss: 1.4389862225341796 , Test Accuracy: 0.6562 , Timing: 7921.123813390732
+[09/14 01:39:29] train_sl INFO: Epoch: 82 , Test Loss: 1.4297248413085937 , Test Accuracy: 0.65816 , Timing: 6294.440805673599
+[09/14 03:28:23] train_sl INFO: Epoch: 83 , Test Loss: 1.4282419604492187 , Test Accuracy: 0.65944 , Timing: 6483.097150564194
+[09/14 05:10:34] train_sl INFO: Epoch: 84 , Test Loss: 1.4229755584716797 , Test Accuracy: 0.65942 , Timing: 6081.201613903046
+[09/14 06:54:24] train_sl INFO: Epoch: 85 , Test Loss: 1.4217774133300782 , Test Accuracy: 0.65886 , Timing: 6180.543235301971
+[09/14 08:36:26] train_sl INFO: Epoch: 86 , Test Loss: 1.4210255218505858 , Test Accuracy: 0.6595 , Timing: 6071.26512336731
+[09/14 10:23:24] train_sl INFO: Epoch: 87 , Test Loss: 1.4231488958740235 , Test Accuracy: 0.65918 , Timing: 6366.986315727234
+[09/14 12:22:27] train_sl INFO: Epoch: 88 , Test Loss: 1.4171593420410156 , Test Accuracy: 0.66074 , Timing: 7091.5838940143585
+[09/14 14:13:35] train_sl INFO: Epoch: 89 , Test Loss: 1.4177583374023437 , Test Accuracy: 0.65992 , Timing: 6615.625746488571
+[09/14 15:56:27] train_sl INFO: Epoch: 90 , Test Loss: 1.4219083856201171 , Test Accuracy: 0.66022 , Timing: 6119.756564378738
+[09/14 15:56:27] train_sl INFO: Model checkpoint saved at epoch: 90
+[09/14 16:20:52] train_sl INFO: Epoch: 91, GradMatch subset selection finished, takes 1464.6614. 
+[09/14 18:02:56] train_sl INFO: Epoch: 91 , Test Loss: 1.4131358819580078 , Test Accuracy: 0.66106 , Timing: 7539.331022500992
+[09/14 19:40:48] train_sl INFO: Epoch: 92 , Test Loss: 1.416069124145508 , Test Accuracy: 0.661 , Timing: 5821.604238271713
+[09/14 21:17:27] train_sl INFO: Epoch: 93 , Test Loss: 1.415749384765625 , Test Accuracy: 0.66078 , Timing: 5749.610257863998
+[09/14 22:54:40] train_sl INFO: Epoch: 94 , Test Loss: 1.4084290350341797 , Test Accuracy: 0.66276 , Timing: 5781.4369513988495
+[09/15 00:32:15] train_sl INFO: Epoch: 95 , Test Loss: 1.411554599609375 , Test Accuracy: 0.66116 , Timing: 5804.6049127578735
+[09/15 02:09:45] train_sl INFO: Epoch: 96 , Test Loss: 1.4153404760742188 , Test Accuracy: 0.66198 , Timing: 5799.076683044434
+[09/15 03:47:18] train_sl INFO: Epoch: 97 , Test Loss: 1.4140445123291017 , Test Accuracy: 0.66132 , Timing: 5802.13640999794
+[09/15 05:25:58] train_sl INFO: Epoch: 98 , Test Loss: 1.4125282348632813 , Test Accuracy: 0.66174 , Timing: 5870.363667011261
+[09/15 07:04:40] train_sl INFO: Epoch: 99 , Test Loss: 1.4110090759277343 , Test Accuracy: 0.6611 , Timing: 5871.803423881531
+[09/15 08:44:35] train_sl INFO: Epoch: 100 , Test Loss: 1.413205623779297 , Test Accuracy: 0.66054 , Timing: 5943.054686307907
+[09/15 08:44:35] train_sl INFO: Model checkpoint saved at epoch: 100
+[09/15 09:08:36] train_sl INFO: Epoch: 101, GradMatch subset selection finished, takes 1440.8834. 
+[09/15 10:46:47] train_sl INFO: Epoch: 101 , Test Loss: 1.4107814514160155 , Test Accuracy: 0.66228 , Timing: 7278.029427289963
+[09/15 12:24:35] train_sl INFO: Epoch: 102 , Test Loss: 1.4078735913085938 , Test Accuracy: 0.66312 , Timing: 5817.989493846893
+[09/15 14:01:36] train_sl INFO: Epoch: 103 , Test Loss: 1.4122972961425782 , Test Accuracy: 0.66258 , Timing: 5770.561357498169
+[09/15 15:39:08] train_sl INFO: Epoch: 104 , Test Loss: 1.4050901458740235 , Test Accuracy: 0.66274 , Timing: 5802.215297222137
+[09/15 17:16:51] train_sl INFO: Epoch: 105 , Test Loss: 1.406838988647461 , Test Accuracy: 0.6626 , Timing: 5812.252460002899
+[09/15 18:54:28] train_sl INFO: Epoch: 106 , Test Loss: 1.4110471087646483 , Test Accuracy: 0.66384 , Timing: 5806.611758470535
+[09/15 20:32:06] train_sl INFO: Epoch: 107 , Test Loss: 1.409855025024414 , Test Accuracy: 0.66352 , Timing: 5807.866728544235
+[09/15 22:09:46] train_sl INFO: Epoch: 108 , Test Loss: 1.4090439575195313 , Test Accuracy: 0.66304 , Timing: 5809.694960832596
+[09/15 23:46:49] train_sl INFO: Epoch: 109 , Test Loss: 1.4074836688232422 , Test Accuracy: 0.66274 , Timing: 5773.204134941101
+[09/16 01:24:04] train_sl INFO: Epoch: 110 , Test Loss: 1.409595092163086 , Test Accuracy: 0.66278 , Timing: 5785.007938146591
+[09/16 01:24:04] train_sl INFO: Model checkpoint saved at epoch: 110
+[09/16 01:49:56] train_sl INFO: Epoch: 111, GradMatch subset selection finished, takes 1551.9544. 
+[09/16 03:28:20] train_sl INFO: Epoch: 111 , Test Loss: 1.4045686193847655 , Test Accuracy: 0.66376 , Timing: 7403.762330770493
+[09/16 05:05:59] train_sl INFO: Epoch: 112 , Test Loss: 1.4054030499267578 , Test Accuracy: 0.6641 , Timing: 5806.411529541016
+[09/16 06:43:43] train_sl INFO: Epoch: 113 , Test Loss: 1.4096800067138673 , Test Accuracy: 0.6637 , Timing: 5812.9289519786835
+[09/16 08:21:48] train_sl INFO: Epoch: 114 , Test Loss: 1.4048977044677735 , Test Accuracy: 0.66252 , Timing: 5834.112407445908
+[09/16 09:59:22] train_sl INFO: Epoch: 115 , Test Loss: 1.404583125 , Test Accuracy: 0.6634 , Timing: 5802.943509578705
+[09/16 11:37:35] train_sl INFO: Epoch: 116 , Test Loss: 1.4113713958740235 , Test Accuracy: 0.6622 , Timing: 5842.05452299118
+[09/16 13:15:35] train_sl INFO: Epoch: 117 , Test Loss: 1.4045420745849608 , Test Accuracy: 0.6639 , Timing: 5827.84735751152
+[09/16 14:53:12] train_sl INFO: Epoch: 118 , Test Loss: 1.4073764923095704 , Test Accuracy: 0.66324 , Timing: 5806.811999797821
+[09/16 16:31:11] train_sl INFO: Epoch: 119 , Test Loss: 1.4070212591552735 , Test Accuracy: 0.6636 , Timing: 5827.598521709442
+[09/16 18:08:56] train_sl INFO: Epoch: 120 , Test Loss: 1.4071315924072265 , Test Accuracy: 0.6648 , Timing: 5813.768880605698
+[09/16 18:08:57] train_sl INFO: Model checkpoint saved at epoch: 120
+[09/16 18:08:57] train_sl INFO: GradMatch-Warm Selection Run---------------------------------
+[09/16 18:08:57] train_sl INFO: Final SubsetTrn: 1.261239
+[09/16 18:08:57] train_sl INFO: Test Loss: 1.41, Test Accuracy: 0.66
+[09/16 18:08:57] train_sl INFO: ---------------------------------------------------------------------
+[09/16 18:08:57] train_sl INFO: GradMatch-Warm
+[09/16 18:08:57] train_sl INFO: ---------------------------------------------------------------------
+[09/16 18:08:57] train_sl INFO: Test Accuracy: 0.1841 , 0.32854 , 0.36352 , 0.40244 , 0.43888 , 0.43314 , 0.43314 , 0.43314 , 0.43314 , 0.46624 , 0.46914 , 0.4692 , 0.4753 , 0.47074 , 0.4727 , 0.49016 , 0.49018 , 0.48178 , 0.48388 , 0.49258 , 0.50408 , 0.47962 , 0.47724 , 0.49518 , 0.4933 , 0.50232 , 0.49164 , 0.48946 , 0.49052 , 0.50628 , 0.50278 , 0.48192 , 0.50554 , 0.50936 , 0.50172 , 0.49662 , 0.49392 , 0.51402 , 0.49642 , 0.5067 , 0.61036 , 0.61632 , 0.6228 , 0.62544 , 0.62872 , 0.6304 , 0.62694 , 0.632 , 0.63076 , 0.63034 , 0.63446 , 0.6366 , 0.6306 , 0.63322 , 0.63568 , 0.63588 , 0.63442 , 0.63306 , 0.63288 , 0.63402 , 0.63538 , 0.63522 , 0.63358 , 0.63066 , 0.63186 , 0.62914 , 0.63136 , 0.62986 , 0.63112 , 0.63056 , 0.62908 , 0.63062 , 0.62958 , 0.63022 , 0.6285 , 0.63088 , 0.62586 , 0.62848 , 0.62228 , 0.6297 , 0.6562 , 0.65816 , 0.65944 , 0.65942 , 0.65886 , 0.6595 , 0.65918 , 0.66074 , 0.65992 , 0.66022 , 0.66106 , 0.661 , 0.66078 , 0.66276 , 0.66116 , 0.66198 , 0.66132 , 0.66174 , 0.6611 , 0.66054 , 0.66228 , 0.66312 , 0.66258 , 0.66274 , 0.6626 , 0.66384 , 0.66352 , 0.66304 , 0.66274 , 0.66278 , 0.66376 , 0.6641 , 0.6637 , 0.66252 , 0.6634 , 0.6622 , 0.6639 , 0.66324 , 0.6636 , 0.6648
+[09/16 18:08:57] train_sl INFO: Time: 9836.168215036392 , 9716.57349729538 , 9757.104816913605 , 9719.17296552658 , 9902.941202402115 , 9976.373660564423 , 0.00037598609924316406 , 0.0003764629364013672 , 0.0004146099090576172 , 5939.604589939117 , 7249.517020225525 , 5796.096418380737 , 5775.3260316848755 , 5721.859403848648 , 5734.738278627396 , 5761.943069934845 , 5766.149573087692 , 5776.857067108154 , 5847.0275502204895 , 6030.594885826111 , 7816.562080144882 , 6308.2669360637665 , 6103.555313825607 , 6237.770343542099 , 6499.765602350235 , 6470.232628107071 , 6601.349741220474 , 6218.564007520676 , 5979.708401441574 , 6043.102085113525 , 7343.50820851326 , 5988.960579395294 , 5958.88635635376 , 5918.421770811081 , 5724.209542512894 , 5731.592206001282 , 6015.502147912979 , 5955.896903038025 , 5963.97225522995 , 5998.8194460868835 , 7551.965182065964 , 6092.365735054016 , 6123.106826305389 , 6084.526926994324 , 5865.847442626953 , 5925.145946025848 , 6244.465733528137 , 6431.37104511261 , 6255.736330747604 , 6593.3899302482605 , 7529.899242401123 , 6144.494043827057 , 6602.921140909195 , 5875.141790151596 , 6048.893144607544 , 5951.803604125977 , 5856.889709472656 , 5893.704370737076 , 5884.1712102890015 , 5948.367650747299 , 7901.81491112709 , 6357.867791175842 , 6161.3847324848175 , 5963.14230298996 , 5944.686589479446 , 6239.464387178421 , 6120.37251996994 , 6302.893955230713 , 6096.202590465546 , 6162.885694980621 , 7439.260412693024 , 6089.804200410843 , 5989.543422698975 , 5958.086773633957 , 6310.618672132492 , 6015.579370737076 , 6038.918000936508 , 6180.165317296982 , 6344.497260570526 , 6525.734471797943 , 7921.123813390732 , 6294.440805673599 , 6483.097150564194 , 6081.201613903046 , 6180.543235301971 , 6071.26512336731 , 6366.986315727234 , 7091.5838940143585 , 6615.625746488571 , 6119.756564378738 , 7539.331022500992 , 5821.604238271713 , 5749.610257863998 , 5781.4369513988495 , 5804.6049127578735 , 5799.076683044434 , 5802.13640999794 , 5870.363667011261 , 5871.803423881531 , 5943.054686307907 , 7278.029427289963 , 5817.989493846893 , 5770.561357498169 , 5802.215297222137 , 5812.252460002899 , 5806.611758470535 , 5807.866728544235 , 5809.694960832596 , 5773.204134941101 , 5785.007938146591 , 7403.762330770493 , 5806.411529541016 , 5812.9289519786835 , 5834.112407445908 , 5802.943509578705 , 5842.05452299118 , 5827.84735751152 , 5806.811999797821 , 5827.598521709442 , 5813.768880605698
+[09/16 18:08:57] train_sl INFO: Total time taken by GradMatch-Warm = 744684.1464 
