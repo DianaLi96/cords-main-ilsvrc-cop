@@ -2,7 +2,7 @@
 config = dict(setting="SL",
               is_reg = False,
               dataset=dict(name="cifar10",
-                           datadir="~/data_selection_dynamic/datasets/cifar10",
+                           datadir="/root/desc/datasets/cifar10",
                            feature="dss",
                            type="image"),
 

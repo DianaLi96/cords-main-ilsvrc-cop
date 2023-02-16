@@ -2,7 +2,7 @@
 config = dict(setting="SL",
               is_reg = False,
               dataset=dict(name="ilsvrc12",
-                           datadir="/export/home/personal/wangjiaxing/Projects/data_selection/datasets/ilsvrc12/imagenet",
+                           datadir="/root/desc/dataset",
                            feature="dss",
                            type="image"),
 

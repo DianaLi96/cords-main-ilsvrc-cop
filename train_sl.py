@@ -9,7 +9,9 @@ import torch.nn as nn
 import torch.optim as optim
 from ray import tune
 from torch.utils.data import Subset
+import torch.distributed as dist
 from cords.utils.config_utils import load_config_data
+from cords.utils.dist_utils import init_dist, average_gradients
 from cords.utils.data.data_utils import WeightedSubset
 from cords.utils.data.data_utils import collate
 from cords.utils.data.dataloader.SL.adaptive import GLISTERDataLoader, OLRandomDataLoader, \
@@ -130,7 +132,11 @@ class TrainClassifier:
                  self.cfg.model.weight_path, self.cfg.model.num_layers, self.cfg.model.hidden_size)
         else:
             raise(NotImplementedError)
+        
         model = model.to(self.cfg.train_args.device)
+        if self.cfg.train_args.distributed:
+            model = torch.nn.parallel.DistributedDataParallel(model,
+                                                      device_ids=[self.cfg.train_args.local_rank])
         return model
 
     """
@@ -207,6 +213,16 @@ class TrainClassifier:
         return return_val
 
     def train(self):
+        """
+        ############################## Dist Set ##################
+        """
+        if self.cfg.train_args.distributed:
+            rank, world_size = init_dist(backend=self.cfg.train_args.dist_backend)
+            self.cfg.train_args.rank = rank
+            self.cfg.train_args.world_size = world_size
+            print("Distributed Enabled. Rank %d initalized" % self.cfg.train_args.rank)
+        else:
+            print("Single model training...")
         """
         ############################## General Training Loop with Data Selection Strategies ##############################
         """
@@ -425,8 +441,19 @@ class TrainClassifier:
             ############################## Full Dataloader Additional Arguments ##############################
             """
             wt_trainset = WeightedSubset(trainset, list(range(len(trainset))), [1] * len(trainset))
-
-            dataloader = torch.utils.data.DataLoader(wt_trainset,
+            # by lys
+            if self.cfg.train_args.distributed:
+                train_sampler = torch.utils.data.distributed.DistributedSampler(trainset)
+                dataloader = torch.utils.data.DataLoader(wt_trainset, 
+                                                     sampler=train_sampler, 
+                                                     shuffle=(train_sampler is None),
+                                                     batch_size=self.cfg.dataloader.batch_size//self.cfg.train_args.world_size,
+                                                     pin_memory=self.cfg.dataloader.pin_memory,
+                                                     collate_fn=self.cfg.dss_args.collate_fn,
+                                                     num_workers=4
+                                                     )
+            else:
+                dataloader = torch.utils.data.DataLoader(wt_trainset,
                                                      batch_size=self.cfg.dataloader.batch_size,
                                                      shuffle=self.cfg.dataloader.shuffle,
                                                      pin_memory=self.cfg.dataloader.pin_memory,
@@ -498,6 +525,9 @@ class TrainClassifier:
         """
 
         for epoch in range(start_epoch, self.cfg.train_args.num_epochs):
+            # by lys
+            if self.cfg.train_args.distributed:
+                train_sampler.set_epoch(epoch)
             # print('Epoch {}'.format(epoch))
             subtrn_loss = 0
             subtrn_correct = 0
@@ -526,12 +556,15 @@ class TrainClassifier:
 
                 optimizer.zero_grad()
                 outputs = model(inputs)
-                losses = criterion_nored(outputs, targets)
+                losses = criterion_nored(outputs, targets) / self.cfg.train_args.world_size
+
                 if self.cfg.is_reg:
                     loss = torch.dot(losses.view(-1), weights / (weights.sum()))
                 else:
                     loss = torch.dot(losses, weights / (weights.sum()))
                 loss.backward()
+                if self.cfg.train_args.distributed:
+                    average_gradients(model)
                 subtrn_loss += (loss.item() * weights.sum())
                 cum_weights += weights.sum()
                 optimizer.step()
@@ -546,7 +579,7 @@ class TrainClassifier:
                     subtrn_correct += predicted.eq(targets).sum().item()
 
                 end_time = time.time()
-                print('time spent:', end_time - startt_time, '========')
+                # print('time spent:', end_time - startt_time, '========')
                 
                 # if ii >= len(trainloader):
                 #     break 
@@ -586,14 +619,24 @@ class TrainClassifier:
                             inputs, targets = inputs.to(self.cfg.train_args.device), \
                                               targets.to(self.cfg.train_args.device, non_blocking=True)
                             outputs = model(inputs)
-                            loss = criterion(outputs, targets)
-                            trn_loss += (loss.item() * trainloader.batch_size)
+                            loss = criterion(outputs, targets) / self.cfg.train_args.world_size
+                            # by lys
+                            reduced_loss = loss.data.clone()
+                            if self.cfg.train_args.distributed:
+                                dist.all_reduce(reduced_loss)
+                            trn_loss += (reduced_loss.item() * trainloader.batch_size)
                             samples += targets.shape[0]
                             if "trn_acc" in print_args:
                                 if is_selcon: predicted = outputs
                                 else: _, predicted = outputs.max(1)
                                 trn_total += targets.size(0)
-                                trn_correct += predicted.eq(targets).sum().item()
+                                # by lys
+                                acc = predicted.eq(targets).sum().item()
+                                reduced_acc = acc.clone() / self.cfg.train_args.world_size
+                                if self.cfg.train_args.distributed:
+                                    dist.all_reduce(reduced_acc)
+                                trn_correct += reduced_acc
+                                # trn_correct += predicted.eq(targets).sum().item()
                         trn_loss = trn_loss/samples
                         trn_losses.append(trn_loss)
 

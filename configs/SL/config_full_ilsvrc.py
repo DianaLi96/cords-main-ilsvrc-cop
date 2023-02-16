@@ -2,7 +2,7 @@
 config = dict(setting="SL",
               is_reg = False,
               dataset=dict(name="ilsvrc12",
-                           datadir="/export/home/personal/wangjiaxing/Projects/data_selection/datasets/ilsvrc12/imagenet",
+                           datadir="/root/desc/dataset",
                            feature="dss",
                            type="image"),
 
@@ -37,6 +37,10 @@ config = dict(setting="SL",
                               print_every=1,
                               results_dir='results_ilsvrc/',
                               print_args=["tst_loss", "tst_acc", "time"],
-                              return_args=[]
+                              return_args=[],
+                              distributed=True,
+                              rank=-1,
+                              world_size=1,
+                              dist_backend='nccl'
                               )
               )
