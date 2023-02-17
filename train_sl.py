@@ -346,8 +346,17 @@ class TrainClassifier:
             self.cfg.dss_args.num_classes = self.cfg.model.numclasses
             self.cfg.dss_args.num_epochs = self.cfg.train_args.num_epochs
             self.cfg.dss_args.device = self.cfg.train_args.device
+            # by lys
+            self.cfg.dss_args.distributed = self.cfg.train_args.distributed
 
-            dataloader = GradMatchDataLoader(trainloader, valloader, self.cfg.dss_args, logger,
+            if self.cfg.train_args.distributed:
+                dataloader = GradMatchDataLoader(trainloader, valloader, self.cfg.dss_args, logger,
+                                             batch_size=self.cfg.dataloader.batch_size//self.cfg.train_args.world_size,
+                                             pin_memory=self.cfg.dataloader.pin_memory,
+                                             collate_fn = self.cfg.dss_args.collate_fn)
+                train_sampler = dataloader.train_sampler
+            else:
+                dataloader = GradMatchDataLoader(trainloader, valloader, self.cfg.dss_args, logger,
                                              batch_size=self.cfg.dataloader.batch_size,
                                              shuffle=self.cfg.dataloader.shuffle,
                                              pin_memory=self.cfg.dataloader.pin_memory,
@@ -443,7 +452,7 @@ class TrainClassifier:
             wt_trainset = WeightedSubset(trainset, list(range(len(trainset))), [1] * len(trainset))
             # by lys
             if self.cfg.train_args.distributed:
-                train_sampler = torch.utils.data.distributed.DistributedSampler(trainset)
+                train_sampler = torch.utils.data.distributed.DistributedSampler(wt_trainset)
                 dataloader = torch.utils.data.DataLoader(wt_trainset, 
                                                      sampler=train_sampler, 
                                                      shuffle=(train_sampler is None),
@@ -526,7 +535,7 @@ class TrainClassifier:
 
         for epoch in range(start_epoch, self.cfg.train_args.num_epochs):
             # by lys
-            if self.cfg.train_args.distributed:
+            if self.cfg.train_args.distributed and train_sampler is not None:
                 train_sampler.set_epoch(epoch)
             # print('Epoch {}'.format(epoch))
             subtrn_loss = 0

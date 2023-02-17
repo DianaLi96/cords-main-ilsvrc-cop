@@ -5,7 +5,7 @@ import os
 
 # os.environ['CUDA_VISIBLE_DEVICES']='1'
 
-config_file = "./configs/SL/config_full_ilsvrc.py" #'./configs/SL/config_gradmatchpb-warm_imagenet.py'
+config_file = "./configs/SL/config_gradmatchpb-warm_imagenet.py" #'./configs/SL/config_gradmatchpb-warm_imagenet.py'
 cfg = load_config_data(config_file)
 clf = TrainClassifier(cfg)
 clf.train()

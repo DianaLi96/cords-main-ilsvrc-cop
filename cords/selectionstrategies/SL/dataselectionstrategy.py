@@ -1,5 +1,5 @@
 import torch
-
+import torch.distributed as dist
 
 class DataSelectionStrategy(object):
     """
@@ -154,6 +154,14 @@ class DataSelectionStrategy(object):
             self.grads_per_elem = torch.cat((l0_grads, l1_grads), dim=1)
         else:
             self.grads_per_elem = l0_grads
+        
+        # all_gather
+        # by lys
+        # world_size = torch.distributed.get_world_size()
+        # if world_size > 1:   
+        #     gathered_batch_grads = [torch.zeros_like(self.grads_per_elem) for _ in range(world_size)]
+        #     dist.all_gather(gathered_batch_grads, self.grads_per_elem)
+        #     self.grads_per_elem = gathered_batch_grads
 
         if valid:
             for batch_idx, (inputs, targets) in enumerate(valloader):

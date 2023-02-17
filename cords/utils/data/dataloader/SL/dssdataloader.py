@@ -43,8 +43,22 @@ class DSSDataLoader:
         self.batch_wise_indices = None
         #self.strategy = None
         self.cur_epoch = 1
+        self.distributed = dss_args.distributed
         wt_trainset = WeightedSubset(full_data, list(range(len(full_data))), [1]*len(full_data))
-        self.wtdataloader = torch.utils.data.DataLoader(wt_trainset, *self.loader_args, **self.loader_kwargs)
+        # by lys
+        if self.distributed:
+            self.train_sampler = torch.utils.data.distributed.DistributedSampler(wt_trainset)
+            self.wtdataloader = torch.utils.data.DataLoader(wt_trainset, 
+                                                     sampler=self.train_sampler, 
+                                                     shuffle=(self.train_sampler is None),
+                                                     num_workers=4,
+                                                     *self.loader_args,
+                                                     **self.loader_kwargs
+                                                     )
+            
+        else:
+            self.train_sampler = None
+            self.wtdataloader = torch.utils.data.DataLoader(wt_trainset, *self.loader_args, **self.loader_kwargs)
         self._init_subset_loader()
 
     def __getattr__(self, item):
@@ -70,7 +84,19 @@ class DSSDataLoader:
         """
         Function that regenerates the data subset loader using new subset indices and subset weights
         """
-        self.subset_loader = DataLoader(WeightedSubset(self.dataset, self.subset_indices, self.subset_weights), 
-                                        *self.loader_args, **self.loader_kwargs)
+        if self.distributed:
+            wt_dataset = WeightedSubset(self.dataset, self.subset_indices, self.subset_weights)
+            train_sampler = torch.utils.data.distributed.DistributedSampler(wt_dataset)
+            self.subset_loader = torch.utils.data.DataLoader(wt_dataset, 
+                                                     sampler=self.train_sampler, 
+                                                     shuffle=(self.train_sampler is None),
+                                                     num_workers=4,
+                                                     *self.loader_args,
+                                                     **self.loader_kwargs
+                                                     )
+        else:
+            self.subset_loader = DataLoader(WeightedSubset(self.dataset, self.subset_indices, self.subset_weights), 
+                                            *self.loader_args, **self.loader_kwargs)
+        
         self.batch_wise_indices = list(self.subset_loader.batch_sampler)
 

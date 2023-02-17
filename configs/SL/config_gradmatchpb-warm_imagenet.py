@@ -47,7 +47,11 @@ config = dict(setting="SL",
                               print_every=1,
                               results_dir='results_ilsvrc12/',
                               print_args=["tst_loss", "tst_acc", "time"],
-                              return_args=[]
+                              return_args=[],
+                              distributed=True,
+                              rank=-1,
+                              world_size=1,
+                              dist_backend='nccl'
                               )
               )
 

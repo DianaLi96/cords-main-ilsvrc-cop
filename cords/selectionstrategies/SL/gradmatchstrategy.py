@@ -147,9 +147,9 @@ class GradMatchStrategy(DataSelectionStrategy):
             if self.valid:
                 sum_val_grad = torch.sum(self.val_grads_per_elem, dim=0)
             else:
-                sum_val_grad = torch.sum(trn_gradients, dim=0)
+                sum_val_grad = torch.sum(trn_gradients, dim=0) # TODO: why sum????
             idxs_temp, gammas_temp = self.ompwrapper(torch.transpose(trn_gradients, 0, 1),
-                                                     sum_val_grad, math.ceil(budget / self.trainloader.batch_size))
+                                                     sum_val_grad, math.ceil(budget / self.trainloader.batch_size))  # TODO: change batch_size
             # import pdb
             # pdb.set_trace()
             batch_wise_indices = list(self.trainloader.batch_sampler)
