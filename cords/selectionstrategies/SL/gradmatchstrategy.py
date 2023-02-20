@@ -153,12 +153,10 @@ class GradMatchStrategy(DataSelectionStrategy):
             # import pdb
             # pdb.set_trace()
             batch_wise_indices = list(self.trainloader.batch_sampler)
-            print("********* idxs_temp batch_wise_indict",trn_gradients.size(), len(idxs_temp), len(batch_wise_indices))
             for i in range(len(idxs_temp)):
                 tmp = batch_wise_indices[idxs_temp[i]]
                 idxs.extend(tmp)
                 gammas.extend(list(gammas_temp[i] * np.ones(len(tmp))))
-            print("********* idxs content", len(idxs))
 
         elif self.selection_type == 'PerClassPerGradient':
             self.get_labels(valid=self.valid)
