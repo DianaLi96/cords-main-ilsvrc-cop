@@ -65,7 +65,7 @@ class DataSelectionStrategy(object):
                     self.val_lbls = torch.cat((self.val_lbls, targets.view(-1, 1)), dim=0)
             self.val_lbls = self.val_lbls.view(-1)
 
-    def compute_gradients(self, valid=False, perBatch=False, perClass=False):
+    def compute_gradients(self, valid=False, perBatch=False, perClass=False, distributed=False):
         """
         Computes the gradient of each element.
 
@@ -103,8 +103,11 @@ class DataSelectionStrategy(object):
         """
         if (perBatch and perClass):
             raise ValueError("batch and perClass are mutually exclusive. Only one of them can be true at a time")
-
-        embDim = self.model.get_embedding_dim()
+        # by lys
+        if distributed:
+            embDim = self.model.module.get_embedding_dim()
+        else:
+            embDim = self.model.get_embedding_dim()
         if perClass:
             trainloader = self.pctrainloader
             if valid:
@@ -157,11 +160,12 @@ class DataSelectionStrategy(object):
         
         # all_gather
         # by lys
-        # world_size = torch.distributed.get_world_size()
-        # if world_size > 1:   
+        if distributed:
+            dist.all_reduce(self.grads_per_elem)   
         #     gathered_batch_grads = [torch.zeros_like(self.grads_per_elem) for _ in range(world_size)]
         #     dist.all_gather(gathered_batch_grads, self.grads_per_elem)
         #     self.grads_per_elem = gathered_batch_grads
+        print("**********grad_shape", self.grads_per_elem.size())
 
         if valid:
             for batch_idx, (inputs, targets) in enumerate(valloader):

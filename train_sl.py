@@ -222,6 +222,7 @@ class TrainClassifier:
             self.cfg.train_args.world_size = world_size
             print("Distributed Enabled. Rank %d initalized" % self.cfg.train_args.rank)
         else:
+            self.cfg.train_args.world_size = 1
             print("Single model training...")
         """
         ############################## General Training Loop with Data Selection Strategies ##############################

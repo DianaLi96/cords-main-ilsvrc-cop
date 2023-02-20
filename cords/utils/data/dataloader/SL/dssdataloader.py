@@ -86,7 +86,7 @@ class DSSDataLoader:
         """
         if self.distributed:
             wt_dataset = WeightedSubset(self.dataset, self.subset_indices, self.subset_weights)
-            train_sampler = torch.utils.data.distributed.DistributedSampler(wt_dataset)
+            self.train_sampler = torch.utils.data.distributed.DistributedSampler(wt_dataset)
             self.subset_loader = torch.utils.data.DataLoader(wt_dataset, 
                                                      sampler=self.train_sampler, 
                                                      shuffle=(self.train_sampler is None),

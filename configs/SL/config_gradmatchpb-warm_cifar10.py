@@ -39,7 +39,7 @@ config = dict(setting="SL",
                             valid=False,
                             eps=1e-100,
                             linear_layer=True,
-                            kappa=0.05),
+                            kappa=0.005), # 0.05
 
 
               train_args=dict(num_epochs=200,
@@ -47,6 +47,10 @@ config = dict(setting="SL",
                               print_every=10,
                               results_dir='results/',
                               print_args=["tst_loss", "tst_acc", "time"],
-                              return_args=[]
+                              return_args=[],
+                              distributed=True,
+                              rank=-1,
+                              world_size=1,
+                              dist_backend='nccl'
                               )
               )

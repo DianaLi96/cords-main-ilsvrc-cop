@@ -90,7 +90,7 @@ class GradMatchStrategy(DataSelectionStrategy):
             ind = torch.nonzero(reg).view(-1)
         return ind.tolist(), reg[ind].tolist()
 
-    def select(self, budget, model_params):
+    def select(self, budget, model_params, distributed=False):
         """
         Apply OMP Algorithm for data selection
 
@@ -139,7 +139,7 @@ class GradMatchStrategy(DataSelectionStrategy):
                 gammas.extend(gammas_temp)
 
         elif self.selection_type == 'PerBatch':
-            self.compute_gradients(self.valid, perBatch=True, perClass=False)
+            self.compute_gradients(self.valid, perBatch=True, perClass=False, distributed=distributed)
   
             idxs = []
             gammas = []
@@ -153,11 +153,12 @@ class GradMatchStrategy(DataSelectionStrategy):
             # import pdb
             # pdb.set_trace()
             batch_wise_indices = list(self.trainloader.batch_sampler)
-            # print('The batch_wise_indices is: ', batch_wise_indices, '======')
+            print("********* idxs_temp batch_wise_indict",trn_gradients.size(), len(idxs_temp), len(batch_wise_indices))
             for i in range(len(idxs_temp)):
                 tmp = batch_wise_indices[idxs_temp[i]]
                 idxs.extend(tmp)
                 gammas.extend(list(gammas_temp[i] * np.ones(len(tmp))))
+            print("********* idxs content", len(idxs))
 
         elif self.selection_type == 'PerClassPerGradient':
             self.get_labels(valid=self.valid)

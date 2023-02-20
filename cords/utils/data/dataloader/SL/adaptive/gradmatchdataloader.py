@@ -54,7 +54,7 @@ class GradMatchDataLoader(AdaptiveDSSDataLoader):
         self.logger.debug("Epoch: {0:d}, requires subset selection. ".format(self.cur_epoch))
         cached_state_dict = copy.deepcopy(self.train_model.state_dict())
         clone_dict = copy.deepcopy(self.train_model.state_dict())
-        subset_indices, subset_weights = self.strategy.select(self.budget, clone_dict)
+        subset_indices, subset_weights = self.strategy.select(self.budget, clone_dict, self.distributed)
         self.train_model.load_state_dict(cached_state_dict)
         end = time.time()
         self.logger.info("Epoch: {0:d}, GradMatch subset selection finished, takes {1:.4f}. ".format(self.cur_epoch, (end - start)))
