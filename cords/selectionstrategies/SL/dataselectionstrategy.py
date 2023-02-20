@@ -165,7 +165,6 @@ class DataSelectionStrategy(object):
         #     gathered_batch_grads = [torch.zeros_like(self.grads_per_elem) for _ in range(world_size)]
         #     dist.all_gather(gathered_batch_grads, self.grads_per_elem)
         #     self.grads_per_elem = gathered_batch_grads
-        print("**********grad_shape", self.grads_per_elem.size())
 
         if valid:
             for batch_idx, (inputs, targets) in enumerate(valloader):
