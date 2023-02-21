@@ -161,7 +161,9 @@ class DataSelectionStrategy(object):
         # all_gather
         # by lys
         if distributed:
-            dist.all_reduce(self.grads_per_elem)   
+            reduce_grads_per_elem = self.grads_per_elem.clone() / dist.get_world_size()
+            dist.all_reduce(reduce_grads_per_elem)
+            self.grads_per_elem = reduce_grads_per_elem
         #     gathered_batch_grads = [torch.zeros_like(self.grads_per_elem) for _ in range(world_size)]
         #     dist.all_gather(gathered_batch_grads, self.grads_per_elem)
         #     self.grads_per_elem = gathered_batch_grads

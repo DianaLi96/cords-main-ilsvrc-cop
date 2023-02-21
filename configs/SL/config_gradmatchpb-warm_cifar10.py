@@ -28,7 +28,10 @@ config = dict(setting="SL",
                              weight_decay=5e-4,
                              nesterov=True),
 
-              scheduler=dict(type="multi_step"),
+            #   scheduler=dict(type="multi_step"),
+              scheduler=dict(type="cifar_multi_step",
+                             milestones=[60, 120, 160],
+                             gamma=0.2),
 
               dss_args=dict(type="GradMatchPB-Warm",
                             fraction=0.6,
@@ -39,7 +42,7 @@ config = dict(setting="SL",
                             valid=False,
                             eps=1e-100,
                             linear_layer=True,
-                            kappa=0.005), # 0.05
+                            kappa=0.05), # 0.05
 
 
               train_args=dict(num_epochs=200,

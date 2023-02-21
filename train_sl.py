@@ -110,6 +110,8 @@ class TrainClassifier:
             model = RegressionNet(self.cfg.model.input_dim)
         elif self.cfg.model.architecture == 'ResNet18':
             model = ResNet18(self.cfg.model.numclasses)
+        elif self.cfg.model.architecture == 'ResNet18Lower':
+            model = resnet18_lower(self.cfg.model.numclasses)
         elif self.cfg.model.architecture == 'ResNet50':
             model = ResNet50(self.cfg.model.numclasses)        
         elif self.cfg.model.architecture == 'MnistNet':
@@ -171,6 +173,8 @@ class TrainClassifier:
             scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=self.cfg.scheduler.stepsize, gamma=self.cfg.scheduler.gamma)
         elif self.cfg.scheduler.type == 'multi_step':
             scheduler = torch.optim.lr_scheduler.MultiStepLR(optimizer, milestones=[int(self.cfg.train_args.num_epochs / 3), int(self.cfg.train_args.num_epochs * 2 / 3)])
+        elif self.cfg.scheduler.type == 'cifar_multi_step':
+            scheduler = torch.optim.lr_scheduler.MultiStepLR(optimizer, milestones=self.cfg.scheduler.milestones, gamma=self.cfg.scheduler.gamma)
         else:
             scheduler = None
         return optimizer, scheduler

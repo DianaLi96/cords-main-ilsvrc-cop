@@ -174,3 +174,457 @@
 [02/20 14:37:36] train_sl INFO: Epoch: 30 , Test Loss: 0.8789295379638672 , Test Accuracy: 0.7087 , Timing: 14.413060426712036
 [02/20 14:37:42] train_sl INFO: Epoch: 31, GradMatch subset selection finished, takes 6.4935. 
 [02/20 14:37:42] train_sl INFO: Epoch: 31, GradMatch subset selection finished, takes 6.5472. 
+[02/20 14:40:07] train_sl INFO: Epoch: 40 , Test Loss: 0.8029834560394287 , Test Accuracy: 0.7273 , Timing: 14.132157325744629
+[02/20 14:40:07] train_sl INFO: Epoch: 40 , Test Loss: 0.8029834560394287 , Test Accuracy: 0.7273 , Timing: 14.188022136688232
+[02/20 14:40:07] train_sl INFO: Model checkpoint saved at epoch: 40
+[02/20 14:40:07] train_sl INFO: Model checkpoint saved at epoch: 40
+[02/20 14:40:14] train_sl INFO: Epoch: 41, GradMatch subset selection finished, takes 6.5637. 
+[02/20 14:40:14] train_sl INFO: Epoch: 41, GradMatch subset selection finished, takes 6.5855. 
+[02/20 14:42:38] train_sl INFO: Epoch: 50 , Test Loss: 0.795697981262207 , Test Accuracy: 0.7392 , Timing: 14.311556577682495
+[02/20 14:42:38] train_sl INFO: Epoch: 50 , Test Loss: 0.795697981262207 , Test Accuracy: 0.7392 , Timing: 14.315521717071533
+[02/20 14:42:45] train_sl INFO: Epoch: 51, GradMatch subset selection finished, takes 6.4838. 
+[02/20 14:42:45] train_sl INFO: Epoch: 51, GradMatch subset selection finished, takes 6.5938. 
+[02/20 14:45:13] train_sl INFO: DotMap(setting='SL', is_reg=False, dataset=DotMap(name='cifar10', datadir='/root/desc/datasets/cifar10', feature='dss', type='image'), dataloader=DotMap(shuffle=True, batch_size=128, pin_memory=True), model=DotMap(architecture='ResNet18', type='pre-defined', numclasses=10), ckpt=DotMap(is_load=False, is_save=True, dir='results/', save_every=20), loss=DotMap(type='CrossEntropyLoss', use_sigmoid=False), optimizer=DotMap(type='sgd', momentum=0.9, lr=0.1, weight_decay=0.0005, nesterov=True), scheduler=DotMap(type='multi_step'), dss_args=DotMap(type='GradMatchPB-Warm', fraction=0.6, select_every=10, lam=0, selection_type='PerBatch', v1=True, valid=False, eps=1e-100, linear_layer=True, kappa=0.005), train_args=DotMap(num_epochs=200, device='cuda', print_every=10, results_dir='results/', print_args=['tst_loss', 'tst_acc', 'time'], return_args=[], distributed=True, rank=0, world_size=2, dist_backend='nccl'))
+[02/20 14:45:13] train_sl INFO: DotMap(setting='SL', is_reg=False, dataset=DotMap(name='cifar10', datadir='/root/desc/datasets/cifar10', feature='dss', type='image'), dataloader=DotMap(shuffle=True, batch_size=128, pin_memory=True), model=DotMap(architecture='ResNet18', type='pre-defined', numclasses=10), ckpt=DotMap(is_load=False, is_save=True, dir='results/', save_every=20), loss=DotMap(type='CrossEntropyLoss', use_sigmoid=False), optimizer=DotMap(type='sgd', momentum=0.9, lr=0.1, weight_decay=0.0005, nesterov=True), scheduler=DotMap(type='multi_step'), dss_args=DotMap(type='GradMatchPB-Warm', fraction=0.6, select_every=10, lam=0, selection_type='PerBatch', v1=True, valid=False, eps=1e-100, linear_layer=True, kappa=0.005), train_args=DotMap(num_epochs=200, device='cuda', print_every=10, results_dir='results/', print_args=['tst_loss', 'tst_acc', 'time'], return_args=[], distributed=True, rank=1, world_size=2, dist_backend='nccl'))
+[02/20 14:47:51] train_sl INFO: Epoch: 10 , Test Loss: 1.157891729736328 , Test Accuracy: 0.6209 , Timing: 13.945037603378296
+[02/20 14:47:51] train_sl INFO: Epoch: 10 , Test Loss: 1.157891729736328 , Test Accuracy: 0.6209 , Timing: 13.941744089126587
+[02/20 14:47:57] train_sl INFO: Epoch: 11, GradMatch subset selection finished, takes 6.2209. 
+[02/20 14:47:57] train_sl INFO: Epoch: 11, GradMatch subset selection finished, takes 6.2146. 
+[02/20 14:50:21] train_sl INFO: Epoch: 20 , Test Loss: 0.8478241111755371 , Test Accuracy: 0.7147 , Timing: 14.107095956802368
+[02/20 14:50:21] train_sl INFO: Epoch: 20 , Test Loss: 0.8478241111755371 , Test Accuracy: 0.7147 , Timing: 14.114205360412598
+[02/20 14:50:22] train_sl INFO: Model checkpoint saved at epoch: 20
+[02/20 14:50:22] train_sl INFO: Model checkpoint saved at epoch: 20
+[02/20 14:50:28] train_sl INFO: Epoch: 21, GradMatch subset selection finished, takes 6.3174. 
+[02/20 14:50:28] train_sl INFO: Epoch: 21, GradMatch subset selection finished, takes 6.3961. 
+[02/20 14:52:52] train_sl INFO: Epoch: 30 , Test Loss: 0.7376848499298095 , Test Accuracy: 0.748 , Timing: 14.168660402297974
+[02/20 14:52:52] train_sl INFO: Epoch: 30 , Test Loss: 0.7376848499298095 , Test Accuracy: 0.748 , Timing: 14.185049533843994
+[02/20 14:52:58] train_sl INFO: Epoch: 31, GradMatch subset selection finished, takes 6.3319. 
+[02/20 14:52:58] train_sl INFO: Epoch: 31, GradMatch subset selection finished, takes 6.3075. 
+[02/20 14:55:21] train_sl INFO: Epoch: 40 , Test Loss: 0.8014935501098632 , Test Accuracy: 0.7381 , Timing: 13.906649827957153
+[02/20 14:55:21] train_sl INFO: Epoch: 40 , Test Loss: 0.8014935501098632 , Test Accuracy: 0.7381 , Timing: 13.947803258895874
+[02/20 14:55:21] train_sl INFO: Model checkpoint saved at epoch: 40
+[02/20 14:55:21] train_sl INFO: Model checkpoint saved at epoch: 40
+[02/20 14:55:27] train_sl INFO: Epoch: 41, GradMatch subset selection finished, takes 6.2463. 
+[02/20 14:55:27] train_sl INFO: Epoch: 41, GradMatch subset selection finished, takes 6.2523. 
+[02/20 14:57:50] train_sl INFO: Epoch: 50 , Test Loss: 0.7888748504638672 , Test Accuracy: 0.7391 , Timing: 14.137313604354858
+[02/20 14:57:50] train_sl INFO: Epoch: 50 , Test Loss: 0.7888748504638672 , Test Accuracy: 0.7391 , Timing: 14.117548704147339
+[02/20 14:57:56] train_sl INFO: Epoch: 51, GradMatch subset selection finished, takes 6.3299. 
+[02/20 14:57:57] train_sl INFO: Epoch: 51, GradMatch subset selection finished, takes 6.7597. 
+[02/20 15:00:20] train_sl INFO: Epoch: 60 , Test Loss: 1.1917381896972656 , Test Accuracy: 0.6641 , Timing: 14.118973016738892
+[02/20 15:00:20] train_sl INFO: Epoch: 60 , Test Loss: 1.1917381896972656 , Test Accuracy: 0.6641 , Timing: 14.112202644348145
+[02/20 15:00:20] train_sl INFO: Model checkpoint saved at epoch: 60
+[02/20 15:00:20] train_sl INFO: Model checkpoint saved at epoch: 60
+[02/20 15:00:27] train_sl INFO: Epoch: 61, GradMatch subset selection finished, takes 6.3856. 
+[02/20 15:00:27] train_sl INFO: Epoch: 61, GradMatch subset selection finished, takes 6.4523. 
+[02/20 15:02:50] train_sl INFO: Epoch: 70 , Test Loss: 0.49457506866455075 , Test Accuracy: 0.8355 , Timing: 14.07602047920227
+[02/20 15:02:50] train_sl INFO: Epoch: 70 , Test Loss: 0.49457506866455075 , Test Accuracy: 0.8355 , Timing: 14.093701839447021
+[02/20 15:02:56] train_sl INFO: Epoch: 71, GradMatch subset selection finished, takes 6.4929. 
+[02/20 15:02:56] train_sl INFO: Epoch: 71, GradMatch subset selection finished, takes 6.5771. 
+[02/20 15:05:19] train_sl INFO: Epoch: 80 , Test Loss: 0.48015197677612304 , Test Accuracy: 0.8409 , Timing: 14.271366834640503
+[02/20 15:05:19] train_sl INFO: Epoch: 80 , Test Loss: 0.48015197677612304 , Test Accuracy: 0.8409 , Timing: 14.257060766220093
+[02/20 15:05:19] train_sl INFO: Model checkpoint saved at epoch: 80
+[02/20 15:05:19] train_sl INFO: Model checkpoint saved at epoch: 80
+[02/20 15:05:26] train_sl INFO: Epoch: 81, GradMatch subset selection finished, takes 6.2730. 
+[02/20 15:05:26] train_sl INFO: Epoch: 81, GradMatch subset selection finished, takes 6.3430. 
+[02/20 15:07:48] train_sl INFO: Epoch: 90 , Test Loss: 0.48558196544647214 , Test Accuracy: 0.8471 , Timing: 14.084249019622803
+[02/20 15:07:48] train_sl INFO: Epoch: 90 , Test Loss: 0.48558196544647214 , Test Accuracy: 0.8471 , Timing: 14.066447257995605
+[02/20 15:07:54] train_sl INFO: Epoch: 91, GradMatch subset selection finished, takes 6.4017. 
+[02/20 15:07:54] train_sl INFO: Epoch: 91, GradMatch subset selection finished, takes 6.4065. 
+[02/20 15:10:17] train_sl INFO: Epoch: 100 , Test Loss: 0.5195425024032593 , Test Accuracy: 0.8377 , Timing: 14.529795169830322
+[02/20 15:10:17] train_sl INFO: Epoch: 100 , Test Loss: 0.5195425024032593 , Test Accuracy: 0.8377 , Timing: 14.541162729263306
+[02/20 15:10:17] train_sl INFO: Model checkpoint saved at epoch: 100
+[02/20 15:10:17] train_sl INFO: Model checkpoint saved at epoch: 100
+[02/20 15:10:24] train_sl INFO: Epoch: 101, GradMatch subset selection finished, takes 6.2670. 
+[02/20 15:10:24] train_sl INFO: Epoch: 101, GradMatch subset selection finished, takes 6.3469. 
+[02/20 15:12:46] train_sl INFO: Epoch: 110 , Test Loss: 0.5410632080078125 , Test Accuracy: 0.8339 , Timing: 13.942395687103271
+[02/20 15:12:46] train_sl INFO: Epoch: 110 , Test Loss: 0.5410632080078125 , Test Accuracy: 0.8339 , Timing: 13.923066854476929
+[02/20 15:12:53] train_sl INFO: Epoch: 111, GradMatch subset selection finished, takes 6.3959. 
+[02/20 15:12:53] train_sl INFO: Epoch: 111, GradMatch subset selection finished, takes 6.4550. 
+[02/20 15:15:15] train_sl INFO: Epoch: 120 , Test Loss: 0.5441242950439453 , Test Accuracy: 0.8301 , Timing: 14.178325891494751
+[02/20 15:15:15] train_sl INFO: Epoch: 120 , Test Loss: 0.5441242950439453 , Test Accuracy: 0.8301 , Timing: 14.135704040527344
+[02/20 15:15:16] train_sl INFO: Model checkpoint saved at epoch: 120
+[02/20 15:15:16] train_sl INFO: Model checkpoint saved at epoch: 120
+[02/20 15:15:22] train_sl INFO: Epoch: 121, GradMatch subset selection finished, takes 6.3855. 
+[02/20 15:15:22] train_sl INFO: Epoch: 121, GradMatch subset selection finished, takes 6.4100. 
+[02/20 15:17:45] train_sl INFO: Epoch: 130 , Test Loss: 0.5225453582763672 , Test Accuracy: 0.8381 , Timing: 14.014472246170044
+[02/20 15:17:45] train_sl INFO: Epoch: 130 , Test Loss: 0.5225453582763672 , Test Accuracy: 0.8381 , Timing: 14.001040697097778
+[02/20 15:17:51] train_sl INFO: Epoch: 131, GradMatch subset selection finished, takes 6.3064. 
+[02/20 15:17:51] train_sl INFO: Epoch: 131, GradMatch subset selection finished, takes 6.2553. 
+[02/20 15:20:14] train_sl INFO: Epoch: 140 , Test Loss: 0.4378837037086487 , Test Accuracy: 0.867 , Timing: 13.981748819351196
+[02/20 15:20:14] train_sl INFO: Epoch: 140 , Test Loss: 0.4378837037086487 , Test Accuracy: 0.867 , Timing: 14.010517358779907
+[02/20 15:20:14] train_sl INFO: Model checkpoint saved at epoch: 140
+[02/20 15:20:15] train_sl INFO: Model checkpoint saved at epoch: 140
+[02/20 15:20:21] train_sl INFO: Epoch: 141, GradMatch subset selection finished, takes 6.6078. 
+[02/20 15:20:21] train_sl INFO: Epoch: 141, GradMatch subset selection finished, takes 6.2758. 
+[02/20 15:22:43] train_sl INFO: Epoch: 150 , Test Loss: 0.4402153186321259 , Test Accuracy: 0.8685 , Timing: 14.012515306472778
+[02/20 15:22:43] train_sl INFO: Epoch: 150 , Test Loss: 0.4402153186321259 , Test Accuracy: 0.8685 , Timing: 14.0056631565094
+[02/20 15:22:50] train_sl INFO: Epoch: 151, GradMatch subset selection finished, takes 6.4342. 
+[02/20 15:22:50] train_sl INFO: Epoch: 151, GradMatch subset selection finished, takes 6.4378. 
+[02/20 15:25:13] train_sl INFO: Epoch: 160 , Test Loss: 0.44519066772460936 , Test Accuracy: 0.8684 , Timing: 13.99121904373169
+[02/20 15:25:13] train_sl INFO: Epoch: 160 , Test Loss: 0.44519066772460936 , Test Accuracy: 0.8684 , Timing: 13.98987078666687
+[02/20 15:25:13] train_sl INFO: Model checkpoint saved at epoch: 160
+[02/20 15:25:14] train_sl INFO: Model checkpoint saved at epoch: 160
+[02/20 15:25:20] train_sl INFO: Epoch: 161, GradMatch subset selection finished, takes 6.3400. 
+[02/20 15:25:20] train_sl INFO: Epoch: 161, GradMatch subset selection finished, takes 6.2825. 
+[02/20 15:27:42] train_sl INFO: Epoch: 170 , Test Loss: 0.4588053846359253 , Test Accuracy: 0.869 , Timing: 14.087746381759644
+[02/20 15:27:43] train_sl INFO: Epoch: 170 , Test Loss: 0.4588053846359253 , Test Accuracy: 0.869 , Timing: 14.061592102050781
+[02/20 15:27:49] train_sl INFO: Epoch: 171, GradMatch subset selection finished, takes 6.2278. 
+[02/20 15:27:49] train_sl INFO: Epoch: 171, GradMatch subset selection finished, takes 6.2544. 
+[02/20 15:30:11] train_sl INFO: Epoch: 180 , Test Loss: 0.47205883769989015 , Test Accuracy: 0.8665 , Timing: 14.01413631439209
+[02/20 15:30:11] train_sl INFO: Epoch: 180 , Test Loss: 0.47205883769989015 , Test Accuracy: 0.8665 , Timing: 14.015889883041382
+[02/20 15:30:12] train_sl INFO: Model checkpoint saved at epoch: 180
+[02/20 15:30:12] train_sl INFO: Model checkpoint saved at epoch: 180
+[02/20 15:30:18] train_sl INFO: Epoch: 181, GradMatch subset selection finished, takes 6.4894. 
+[02/20 15:30:18] train_sl INFO: Epoch: 181, GradMatch subset selection finished, takes 6.5610. 
+[02/20 15:32:41] train_sl INFO: Epoch: 190 , Test Loss: 0.4753059030532837 , Test Accuracy: 0.8692 , Timing: 13.955588817596436
+[02/20 15:32:41] train_sl INFO: Epoch: 190 , Test Loss: 0.4753059030532837 , Test Accuracy: 0.8692 , Timing: 13.942655801773071
+[02/20 15:32:47] train_sl INFO: Epoch: 191, GradMatch subset selection finished, takes 6.4587. 
+[02/20 15:32:47] train_sl INFO: Epoch: 191, GradMatch subset selection finished, takes 6.4315. 
+[02/20 15:35:10] train_sl INFO: Epoch: 200 , Test Loss: 0.4773205728530884 , Test Accuracy: 0.8716 , Timing: 14.092318296432495
+[02/20 15:35:10] train_sl INFO: Epoch: 200 , Test Loss: 0.4773205728530884 , Test Accuracy: 0.8716 , Timing: 14.096470355987549
+[02/20 15:35:11] train_sl INFO: Model checkpoint saved at epoch: 200
+[02/20 15:35:11] train_sl INFO: Model checkpoint saved at epoch: 200
+[02/20 15:35:11] train_sl INFO: GradMatchPB-Warm Selection Run---------------------------------
+[02/20 15:35:11] train_sl INFO: GradMatchPB-Warm Selection Run---------------------------------
+[02/20 15:35:11] train_sl INFO: Final SubsetTrn: 0.039997
+[02/20 15:35:11] train_sl INFO: Final SubsetTrn: 0.038658
+[02/20 15:35:11] train_sl INFO: Test Loss: 0.48, Test Accuracy: 0.87
+[02/20 15:35:11] train_sl INFO: ---------------------------------------------------------------------
+[02/20 15:35:11] train_sl INFO: Test Loss: 0.48, Test Accuracy: 0.87
+[02/20 15:35:11] train_sl INFO: GradMatchPB-Warm
+[02/20 15:35:11] train_sl INFO: ---------------------------------------------------------------------
+[02/20 15:35:11] train_sl INFO: ---------------------------------------------------------------------
+[02/20 15:35:11] train_sl INFO: GradMatchPB-Warm
+[02/20 15:35:11] train_sl INFO: Test Accuracy: 0.6209 , 0.7147 , 0.748 , 0.7381 , 0.7391 , 0.6641 , 0.8355 , 0.8409 , 0.8471 , 0.8377 , 0.8339 , 0.8301 , 0.8381 , 0.867 , 0.8685 , 0.8684 , 0.869 , 0.8665 , 0.8692 , 0.8716
+[02/20 15:35:11] train_sl INFO: ---------------------------------------------------------------------
+[02/20 15:35:11] train_sl INFO: Test Accuracy: 0.6209 , 0.7147 , 0.748 , 0.7381 , 0.7391 , 0.6641 , 0.8355 , 0.8409 , 0.8471 , 0.8377 , 0.8339 , 0.8301 , 0.8381 , 0.867 , 0.8685 , 0.8684 , 0.869 , 0.8665 , 0.8692 , 0.8716
+[02/20 15:35:11] train_sl INFO: Time: 23.46574091911316 , 14.115585565567017 , 14.075849294662476 , 14.211241960525513 , 14.222002029418945 , 14.223947286605835 , 14.145718574523926 , 14.051045894622803 , 13.91173243522644 , 13.941744089126587 , 20.334996938705444 , 14.115432500839233 , 14.034470796585083 , 14.162901163101196 , 14.29123854637146 , 14.12100100517273 , 14.136631965637207 , 14.171998739242554 , 14.075441122055054 , 14.114205360412598 , 20.678943157196045 , 14.054451942443848 , 14.198457479476929 , 14.160488605499268 , 14.075421333312988 , 14.097540616989136 , 14.239031553268433 , 14.283334970474243 , 14.083845853805542 , 14.185049533843994 , 20.586938619613647 , 14.08899712562561 , 13.967582941055298 , 14.07801079750061 , 14.093137741088867 , 14.23156213760376 , 14.134567499160767 , 14.045249462127686 , 14.080928087234497 , 13.947803258895874 , 20.428337574005127 , 13.975492715835571 , 14.095771789550781 , 14.162549257278442 , 14.092331647872925 , 14.063551425933838 , 14.062396764755249 , 14.04939079284668 , 14.018259525299072 , 14.117548704147339 , 20.915590524673462 , 14.222506284713745 , 14.236674547195435 , 14.110441207885742 , 14.098778486251831 , 14.114070415496826 , 14.00769591331482 , 14.171162605285645 , 13.96021556854248 , 14.118973016738892 , 20.54640293121338 , 14.007501363754272 , 14.081804752349854 , 14.104686498641968 , 14.248544216156006 , 14.06763243675232 , 14.100394010543823 , 14.19797968864441 , 14.00636076927185 , 14.07602047920227 , 20.54368543624878 , 13.993671417236328 , 14.103600263595581 , 14.073257207870483 , 13.975053787231445 , 14.1939697265625 , 14.116512060165405 , 14.076087474822998 , 14.047760725021362 , 14.271366834640503 , 20.212590217590332 , 14.046116352081299 , 14.134819746017456 , 13.917542219161987 , 13.911939859390259 , 14.207600831985474 , 14.087280988693237 , 13.945391416549683 , 13.946170330047607 , 14.066447257995605 , 20.241662740707397 , 14.096685886383057 , 14.201997518539429 , 14.102434635162354 , 14.193091630935669 , 13.911598682403564 , 13.990286350250244 , 14.074177503585815 , 14.036778211593628 , 14.541162729263306 , 20.390115976333618 , 14.359273433685303 , 14.175660610198975 , 14.01373815536499 , 14.168310642242432 , 14.069976329803467 , 13.972390174865723 , 13.909700632095337 , 13.981016159057617 , 13.942395687103271 , 20.37181329727173 , 14.133344411849976 , 14.192016839981079 , 14.103007555007935 , 13.992184400558472 , 13.944503784179688 , 14.00733733177185 , 14.020089387893677 , 13.991223096847534 , 14.135704040527344 , 20.342482089996338 , 14.297046422958374 , 14.253663301467896 , 14.09233021736145 , 14.071264505386353 , 14.1974778175354 , 13.859392642974854 , 14.022628784179688 , 13.954589605331421 , 14.001040697097778 , 20.30991005897522 , 13.900712728500366 , 14.063613176345825 , 13.9979248046875 , 14.066041946411133 , 14.274648189544678 , 14.076896667480469 , 14.134962320327759 , 14.27528977394104 , 14.010517358779907 , 20.16587805747986 , 14.124057292938232 , 13.98808217048645 , 14.092723369598389 , 14.144548177719116 , 14.236453533172607 , 14.049934387207031 , 14.067758083343506 , 14.085273742675781 , 14.0056631565094 , 20.3428373336792 , 14.0357985496521 , 14.100984573364258 , 14.160629749298096 , 14.290056467056274 , 14.163508415222168 , 14.26546835899353 , 14.040253400802612 , 14.043758153915405 , 13.99121904373169 , 20.659743547439575 , 13.997342586517334 , 14.035792112350464 , 13.889284372329712 , 14.093805313110352 , 14.168438911437988 , 13.984754085540771 , 14.013518333435059 , 14.251556873321533 , 14.061592102050781 , 20.461925268173218 , 13.919240951538086 , 14.047967910766602 , 14.093475341796875 , 13.8547682762146 , 14.16049861907959 , 14.21939730644226 , 13.948863983154297 , 13.959404230117798 , 14.01413631439209 , 20.505685567855835 , 14.157872200012207 , 13.99892258644104 , 13.928154945373535 , 14.137760639190674 , 14.168470859527588 , 14.069988012313843 , 14.229353666305542 , 14.108932971954346 , 13.942655801773071 , 20.57551336288452 , 14.152415037155151 , 14.067337274551392 , 14.054028511047363 , 14.021355628967285 , 14.070141792297363 , 14.033589601516724 , 14.326003789901733 , 14.174160480499268 , 14.092318296432495
+[02/20 15:35:11] train_sl INFO: Total time taken by GradMatchPB-Warm = 2948.0754 
+[02/20 15:35:11] train_sl INFO: Time: 23.46038031578064 , 14.107147455215454 , 14.08775544166565 , 14.225832462310791 , 14.211690187454224 , 14.221101760864258 , 14.14872694015503 , 14.04992961883545 , 13.896474361419678 , 13.945037603378296 , 20.37695002555847 , 14.099358320236206 , 14.028794527053833 , 14.158683776855469 , 14.24396800994873 , 14.198736906051636 , 14.120978832244873 , 14.16529369354248 , 14.082067251205444 , 14.107095956802368 , 20.749225616455078 , 14.0843026638031 , 14.142789602279663 , 14.17862844467163 , 14.079625129699707 , 14.124994039535522 , 14.227806806564331 , 14.226179122924805 , 14.133845806121826 , 14.168660402297974 , 20.564951419830322 , 14.155829906463623 , 13.976955890655518 , 14.070773363113403 , 14.078063249588013 , 14.209975957870483 , 14.161227464675903 , 14.051561832427979 , 14.08785629272461 , 13.906649827957153 , 20.41278600692749 , 13.998417377471924 , 14.084933519363403 , 14.139735698699951 , 14.113984107971191 , 14.054314374923706 , 14.078575611114502 , 14.039622783660889 , 14.023885488510132 , 14.137313604354858 , 20.957724809646606 , 14.201430559158325 , 14.25017523765564 , 14.085914850234985 , 14.111257791519165 , 14.106935024261475 , 14.008438348770142 , 14.166711807250977 , 13.984546661376953 , 14.112202644348145 , 20.584221601486206 , 13.995230436325073 , 14.040743350982666 , 14.125458478927612 , 14.220578908920288 , 14.07427716255188 , 14.106030941009521 , 14.23088026046753 , 13.96803331375122 , 14.093701839447021 , 20.532878637313843 , 14.019842624664307 , 14.08818507194519 , 14.05419111251831 , 14.003132343292236 , 14.178769826889038 , 14.115818977355957 , 14.064712047576904 , 14.075292825698853 , 14.257060766220093 , 20.194190740585327 , 14.049571514129639 , 14.149991035461426 , 13.937518119812012 , 13.907550573348999 , 14.218772172927856 , 14.071093082427979 , 13.92308235168457 , 13.96371603012085 , 14.084249019622803 , 20.267650365829468 , 14.072102069854736 , 14.236489057540894 , 14.071551322937012 , 14.137168884277344 , 13.977193832397461 , 13.951252937316895 , 14.058532953262329 , 14.092807054519653 , 14.529795169830322 , 20.433876991271973 , 14.349233388900757 , 14.131903171539307 , 14.070147275924683 , 14.14717149734497 , 14.105509281158447 , 13.955783605575562 , 13.89717411994934 , 13.997173547744751 , 13.923066854476929 , 20.3460431098938 , 14.14301323890686 , 14.166298627853394 , 14.073168754577637 , 14.045272588729858 , 13.977084398269653 , 13.976623058319092 , 13.983452796936035 , 13.951226234436035 , 14.178325891494751 , 20.35296607017517 , 14.25504755973816 , 14.287100315093994 , 14.146919965744019 , 14.012097358703613 , 14.206096649169922 , 13.829659461975098 , 14.069180488586426 , 13.930906772613525 , 14.014472246170044 , 20.3670654296875 , 13.901276111602783 , 14.05689549446106 , 14.004043579101562 , 14.064592361450195 , 14.268796443939209 , 14.064618110656738 , 14.15717101097107 , 14.294934272766113 , 13.981748819351196 , 20.623537302017212 , 14.085747003555298 , 13.980608463287354 , 14.101693153381348 , 14.157350063323975 , 14.214008331298828 , 14.046085357666016 , 14.077717304229736 , 14.084609746932983 , 14.012515306472778 , 20.378321647644043 , 14.0015389919281 , 14.136592149734497 , 14.155229806900024 , 14.30594253540039 , 14.145059585571289 , 14.218769550323486 , 14.087527990341187 , 14.025798320770264 , 13.98987078666687 , 20.5970458984375 , 13.983889102935791 , 14.05053997039795 , 13.859501361846924 , 14.108300685882568 , 14.187538862228394 , 13.97326397895813 , 13.97483491897583 , 14.303592681884766 , 14.087746381759644 , 20.527639865875244 , 13.899302244186401 , 14.045875072479248 , 14.100434303283691 , 13.827228546142578 , 14.164449453353882 , 14.249193906784058 , 13.934223651885986 , 13.973972082138062 , 14.015889883041382 , 20.534652709960938 , 14.133532524108887 , 13.991228580474854 , 13.938228368759155 , 14.127745866775513 , 14.172181129455566 , 14.058074474334717 , 14.225971460342407 , 14.121672630310059 , 13.955588817596436 , 20.655544757843018 , 14.176433324813843 , 14.075453758239746 , 14.029902696609497 , 14.042162656784058 , 14.026694774627686 , 14.029351949691772 , 14.338777542114258 , 14.171119928359985 , 14.096470355987549
+[02/20 15:35:11] train_sl INFO: Total time taken by GradMatchPB-Warm = 2948.8190 
+[02/20 15:44:15] train_sl INFO: DotMap(setting='SL', is_reg=False, dataset=DotMap(name='cifar10', datadir='/root/desc/datasets/cifar10', feature='dss', type='image'), dataloader=DotMap(shuffle=True, batch_size=128, pin_memory=True), model=DotMap(architecture='ResNet18', type='pre-defined', numclasses=10), ckpt=DotMap(is_load=False, is_save=True, dir='results/', save_every=20), loss=DotMap(type='CrossEntropyLoss', use_sigmoid=False), optimizer=DotMap(type='sgd', momentum=0.9, lr=0.1, weight_decay=0.0005, nesterov=True), scheduler=DotMap(type='multi_step'), dss_args=DotMap(type='GradMatchPB-Warm', fraction=0.6, select_every=10, lam=0, selection_type='PerBatch', v1=True, valid=False, eps=1e-100, linear_layer=True, kappa=0.05), train_args=DotMap(num_epochs=200, device='cuda', print_every=10, results_dir='results/', print_args=['tst_loss', 'tst_acc', 'time'], return_args=[], distributed=True, rank=0, world_size=2, dist_backend='nccl'))
+[02/20 15:44:15] train_sl INFO: DotMap(setting='SL', is_reg=False, dataset=DotMap(name='cifar10', datadir='/root/desc/datasets/cifar10', feature='dss', type='image'), dataloader=DotMap(shuffle=True, batch_size=128, pin_memory=True), model=DotMap(architecture='ResNet18', type='pre-defined', numclasses=10), ckpt=DotMap(is_load=False, is_save=True, dir='results/', save_every=20), loss=DotMap(type='CrossEntropyLoss', use_sigmoid=False), optimizer=DotMap(type='sgd', momentum=0.9, lr=0.1, weight_decay=0.0005, nesterov=True), scheduler=DotMap(type='multi_step'), dss_args=DotMap(type='GradMatchPB-Warm', fraction=0.6, select_every=10, lam=0, selection_type='PerBatch', v1=True, valid=False, eps=1e-100, linear_layer=True, kappa=0.05), train_args=DotMap(num_epochs=200, device='cuda', print_every=10, results_dir='results/', print_args=['tst_loss', 'tst_acc', 'time'], return_args=[], distributed=True, rank=1, world_size=2, dist_backend='nccl'))
+[02/20 15:46:38] train_sl INFO: Epoch: 10 , Test Loss: 1.0207689140319824 , Test Accuracy: 0.6479 , Timing: 0.00012493133544921875
+[02/20 15:46:38] train_sl INFO: Epoch: 10 , Test Loss: 1.0207689140319824 , Test Accuracy: 0.6479 , Timing: 0.00012183189392089844
+[02/20 15:46:44] train_sl INFO: Epoch: 11, GradMatch subset selection finished, takes 6.3321. 
+[02/20 15:46:44] train_sl INFO: Epoch: 11, GradMatch subset selection finished, takes 6.4153. 
+[02/20 15:49:06] train_sl INFO: Epoch: 20 , Test Loss: 0.9289552307128907 , Test Accuracy: 0.684 , Timing: 13.887654542922974
+[02/20 15:49:06] train_sl INFO: Epoch: 20 , Test Loss: 0.9289552307128907 , Test Accuracy: 0.684 , Timing: 13.87792444229126
+[02/20 15:49:06] train_sl INFO: Model checkpoint saved at epoch: 20
+[02/20 15:49:06] train_sl INFO: Model checkpoint saved at epoch: 20
+[02/20 15:49:13] train_sl INFO: Epoch: 21, GradMatch subset selection finished, takes 6.3202. 
+[02/20 15:49:13] train_sl INFO: Epoch: 21, GradMatch subset selection finished, takes 6.3453. 
+[02/20 15:51:35] train_sl INFO: Epoch: 30 , Test Loss: 0.8089245857238769 , Test Accuracy: 0.7312 , Timing: 13.870648860931396
+[02/20 15:51:35] train_sl INFO: Epoch: 30 , Test Loss: 0.8089245857238769 , Test Accuracy: 0.7312 , Timing: 13.910392045974731
+[02/20 15:51:41] train_sl INFO: Epoch: 31, GradMatch subset selection finished, takes 6.2766. 
+[02/20 15:51:41] train_sl INFO: Epoch: 31, GradMatch subset selection finished, takes 6.3170. 
+[02/20 15:54:03] train_sl INFO: Epoch: 40 , Test Loss: 0.8082434898376465 , Test Accuracy: 0.728 , Timing: 14.084007501602173
+[02/20 15:54:03] train_sl INFO: Epoch: 40 , Test Loss: 0.8082434898376465 , Test Accuracy: 0.728 , Timing: 14.099725484848022
+[02/20 15:54:03] train_sl INFO: Model checkpoint saved at epoch: 40
+[02/20 15:54:03] train_sl INFO: Model checkpoint saved at epoch: 40
+[02/20 15:54:10] train_sl INFO: Epoch: 41, GradMatch subset selection finished, takes 6.4488. 
+[02/20 15:54:10] train_sl INFO: Epoch: 41, GradMatch subset selection finished, takes 6.4688. 
+[02/20 15:56:30] train_sl INFO: Epoch: 50 , Test Loss: 0.769974127960205 , Test Accuracy: 0.739 , Timing: 14.107513427734375
+[02/20 15:56:31] train_sl INFO: Epoch: 50 , Test Loss: 0.769974127960205 , Test Accuracy: 0.739 , Timing: 14.19815969467163
+[02/20 15:56:37] train_sl INFO: Epoch: 51, GradMatch subset selection finished, takes 6.5313. 
+[02/20 15:56:37] train_sl INFO: Epoch: 51, GradMatch subset selection finished, takes 6.5745. 
+[02/20 15:58:58] train_sl INFO: Epoch: 60 , Test Loss: 0.7349071434020996 , Test Accuracy: 0.7539 , Timing: 13.972723007202148
+[02/20 15:58:58] train_sl INFO: Epoch: 60 , Test Loss: 0.7349071434020996 , Test Accuracy: 0.7539 , Timing: 13.967149019241333
+[02/20 15:58:58] train_sl INFO: Model checkpoint saved at epoch: 60
+[02/20 15:58:58] train_sl INFO: Model checkpoint saved at epoch: 60
+[02/20 15:59:06] train_sl INFO: Epoch: 61, GradMatch subset selection finished, takes 7.2388. 
+[02/20 15:59:06] train_sl INFO: Epoch: 61, GradMatch subset selection finished, takes 7.2419. 
+[02/20 16:01:29] train_sl INFO: Epoch: 70 , Test Loss: 0.4939114553451538 , Test Accuracy: 0.8372 , Timing: 14.094773530960083
+[02/20 16:01:29] train_sl INFO: Epoch: 70 , Test Loss: 0.4939114553451538 , Test Accuracy: 0.8372 , Timing: 14.084839582443237
+[02/20 16:01:36] train_sl INFO: Epoch: 71, GradMatch subset selection finished, takes 6.9410. 
+[02/20 16:01:37] train_sl INFO: Epoch: 71, GradMatch subset selection finished, takes 7.0560. 
+[02/20 16:04:00] train_sl INFO: Epoch: 80 , Test Loss: 0.49227820320129395 , Test Accuracy: 0.8413 , Timing: 14.04285454750061
+[02/20 16:04:00] train_sl INFO: Epoch: 80 , Test Loss: 0.49227820320129395 , Test Accuracy: 0.8413 , Timing: 14.119403839111328
+[02/20 16:04:01] train_sl INFO: Model checkpoint saved at epoch: 80
+[02/20 16:04:01] train_sl INFO: Model checkpoint saved at epoch: 80
+[02/20 16:04:08] train_sl INFO: Epoch: 81, GradMatch subset selection finished, takes 6.9148. 
+[02/20 16:04:08] train_sl INFO: Epoch: 81, GradMatch subset selection finished, takes 6.9658. 
+[02/20 16:06:31] train_sl INFO: Epoch: 90 , Test Loss: 0.49892693710327146 , Test Accuracy: 0.842 , Timing: 14.338005065917969
+[02/20 16:06:31] train_sl INFO: Epoch: 90 , Test Loss: 0.49892693710327146 , Test Accuracy: 0.842 , Timing: 14.320265531539917
+[02/20 16:06:39] train_sl INFO: Epoch: 91, GradMatch subset selection finished, takes 7.2391. 
+[02/20 16:06:39] train_sl INFO: Epoch: 91, GradMatch subset selection finished, takes 7.2635. 
+[02/20 16:09:02] train_sl INFO: Epoch: 100 , Test Loss: 0.49731737670898435 , Test Accuracy: 0.8391 , Timing: 14.193824052810669
+[02/20 16:09:02] train_sl INFO: Epoch: 100 , Test Loss: 0.49731737670898435 , Test Accuracy: 0.8391 , Timing: 14.222635507583618
+[02/20 16:09:03] train_sl INFO: Model checkpoint saved at epoch: 100
+[02/20 16:09:03] train_sl INFO: Model checkpoint saved at epoch: 100
+[02/20 16:09:10] train_sl INFO: Epoch: 101, GradMatch subset selection finished, takes 7.1541. 
+[02/20 16:09:10] train_sl INFO: Epoch: 101, GradMatch subset selection finished, takes 7.2324. 
+[02/20 16:11:33] train_sl INFO: Epoch: 110 , Test Loss: 0.5258349786758423 , Test Accuracy: 0.8408 , Timing: 14.2633957862854
+[02/20 16:11:33] train_sl INFO: Epoch: 110 , Test Loss: 0.5258349786758423 , Test Accuracy: 0.8408 , Timing: 14.264702081680298
+[02/20 16:11:40] train_sl INFO: Epoch: 111, GradMatch subset selection finished, takes 7.0245. 
+[02/20 16:11:40] train_sl INFO: Epoch: 111, GradMatch subset selection finished, takes 6.9345. 
+[02/20 16:14:04] train_sl INFO: Epoch: 120 , Test Loss: 0.5406494890213013 , Test Accuracy: 0.8371 , Timing: 14.230149030685425
+[02/20 16:14:04] train_sl INFO: Epoch: 120 , Test Loss: 0.5406494890213013 , Test Accuracy: 0.8371 , Timing: 14.225687503814697
+[02/20 16:14:05] train_sl INFO: Model checkpoint saved at epoch: 120
+[02/20 16:14:05] train_sl INFO: Model checkpoint saved at epoch: 120
+[02/20 16:14:12] train_sl INFO: Epoch: 121, GradMatch subset selection finished, takes 7.4990. 
+[02/20 16:14:12] train_sl INFO: Epoch: 121, GradMatch subset selection finished, takes 7.5215. 
+[02/20 16:16:36] train_sl INFO: Epoch: 130 , Test Loss: 0.5212047729492187 , Test Accuracy: 0.8453 , Timing: 14.294182538986206
+[02/20 16:16:36] train_sl INFO: Epoch: 130 , Test Loss: 0.5212047729492187 , Test Accuracy: 0.8453 , Timing: 14.302768468856812
+[02/20 16:16:43] train_sl INFO: Epoch: 131, GradMatch subset selection finished, takes 7.3280. 
+[02/20 16:16:43] train_sl INFO: Epoch: 131, GradMatch subset selection finished, takes 7.2778. 
+[02/20 16:19:07] train_sl INFO: Epoch: 140 , Test Loss: 0.43253180351257325 , Test Accuracy: 0.8679 , Timing: 14.0287344455719
+[02/20 16:19:07] train_sl INFO: Epoch: 140 , Test Loss: 0.43253180351257325 , Test Accuracy: 0.8679 , Timing: 14.067530632019043
+[02/20 16:19:07] train_sl INFO: Model checkpoint saved at epoch: 140
+[02/20 16:19:07] train_sl INFO: Model checkpoint saved at epoch: 140
+[02/20 16:19:14] train_sl INFO: Epoch: 141, GradMatch subset selection finished, takes 7.1329. 
+[02/20 16:19:14] train_sl INFO: Epoch: 141, GradMatch subset selection finished, takes 7.1341. 
+[02/20 16:21:37] train_sl INFO: Epoch: 150 , Test Loss: 0.4352597322463989 , Test Accuracy: 0.8718 , Timing: 14.000752687454224
+[02/20 16:21:37] train_sl INFO: Epoch: 150 , Test Loss: 0.4352597322463989 , Test Accuracy: 0.8718 , Timing: 14.03378701210022
+[02/20 16:21:44] train_sl INFO: Epoch: 151, GradMatch subset selection finished, takes 7.4868. 
+[02/20 16:21:44] train_sl INFO: Epoch: 151, GradMatch subset selection finished, takes 7.5684. 
+[02/20 16:24:08] train_sl INFO: Epoch: 160 , Test Loss: 0.4492279146194458 , Test Accuracy: 0.8697 , Timing: 14.218320369720459
+[02/20 16:24:08] train_sl INFO: Epoch: 160 , Test Loss: 0.4492279146194458 , Test Accuracy: 0.8697 , Timing: 14.208442687988281
+[02/20 16:24:08] train_sl INFO: Model checkpoint saved at epoch: 160
+[02/20 16:24:08] train_sl INFO: Model checkpoint saved at epoch: 160
+[02/20 16:24:16] train_sl INFO: Epoch: 161, GradMatch subset selection finished, takes 7.3757. 
+[02/20 16:24:16] train_sl INFO: Epoch: 161, GradMatch subset selection finished, takes 7.4098. 
+[02/20 16:26:43] train_sl INFO: Epoch: 170 , Test Loss: 0.45074883613586425 , Test Accuracy: 0.8703 , Timing: 15.069488286972046
+[02/20 16:26:43] train_sl INFO: Epoch: 170 , Test Loss: 0.45074883613586425 , Test Accuracy: 0.8703 , Timing: 14.97531270980835
+[02/20 16:26:51] train_sl INFO: Epoch: 171, GradMatch subset selection finished, takes 8.4018. 
+[02/20 16:26:51] train_sl INFO: Epoch: 171, GradMatch subset selection finished, takes 8.5083. 
+[02/20 16:29:22] train_sl INFO: Epoch: 180 , Test Loss: 0.4543827299118042 , Test Accuracy: 0.8738 , Timing: 14.799352645874023
+[02/20 16:29:23] train_sl INFO: Epoch: 180 , Test Loss: 0.4543827299118042 , Test Accuracy: 0.8738 , Timing: 14.84423565864563
+[02/20 16:29:23] train_sl INFO: Model checkpoint saved at epoch: 180
+[02/20 16:29:24] train_sl INFO: Model checkpoint saved at epoch: 180
+[02/20 16:29:32] train_sl INFO: Epoch: 181, GradMatch subset selection finished, takes 8.2267. 
+[02/20 16:29:32] train_sl INFO: Epoch: 181, GradMatch subset selection finished, takes 8.9833. 
+[02/20 16:32:03] train_sl INFO: Epoch: 190 , Test Loss: 0.47054105596542356 , Test Accuracy: 0.8713 , Timing: 14.961048603057861
+[02/20 16:32:03] train_sl INFO: Epoch: 190 , Test Loss: 0.47054105596542356 , Test Accuracy: 0.8713 , Timing: 14.988178491592407
+[02/20 16:32:12] train_sl INFO: Epoch: 191, GradMatch subset selection finished, takes 8.2791. 
+[02/20 16:32:12] train_sl INFO: Epoch: 191, GradMatch subset selection finished, takes 8.4578. 
+[02/20 16:34:43] train_sl INFO: Epoch: 200 , Test Loss: 0.4700943563938141 , Test Accuracy: 0.8723 , Timing: 14.98732042312622
+[02/20 16:34:43] train_sl INFO: Epoch: 200 , Test Loss: 0.4700943563938141 , Test Accuracy: 0.8723 , Timing: 15.001136541366577
+[02/20 16:34:43] train_sl INFO: Model checkpoint saved at epoch: 200
+[02/20 16:34:43] train_sl INFO: GradMatchPB-Warm Selection Run---------------------------------
+[02/20 16:34:43] train_sl INFO: Model checkpoint saved at epoch: 200
+[02/20 16:34:43] train_sl INFO: Final SubsetTrn: 0.041152
+[02/20 16:34:43] train_sl INFO: Test Loss: 0.47, Test Accuracy: 0.87
+[02/20 16:34:43] train_sl INFO: ---------------------------------------------------------------------
+[02/20 16:34:43] train_sl INFO: GradMatchPB-Warm Selection Run---------------------------------
+[02/20 16:34:43] train_sl INFO: GradMatchPB-Warm
+[02/20 16:34:43] train_sl INFO: ---------------------------------------------------------------------
+[02/20 16:34:43] train_sl INFO: Test Accuracy: 0.6479 , 0.684 , 0.7312 , 0.728 , 0.739 , 0.7539 , 0.8372 , 0.8413 , 0.842 , 0.8391 , 0.8408 , 0.8371 , 0.8453 , 0.8679 , 0.8718 , 0.8697 , 0.8703 , 0.8738 , 0.8713 , 0.8723
+[02/20 16:34:43] train_sl INFO: Final SubsetTrn: 0.040587
+[02/20 16:34:43] train_sl INFO: Test Loss: 0.47, Test Accuracy: 0.87
+[02/20 16:34:43] train_sl INFO: ---------------------------------------------------------------------
+[02/20 16:34:43] train_sl INFO: Time: 23.049520015716553 , 22.52061367034912 , 22.337965965270996 , 22.379770755767822 , 22.403782606124878 , 23.12721538543701 , 0.0003173351287841797 , 0.0001246929168701172 , 0.00011682510375976562 , 0.00012493133544921875 , 20.492264986038208 , 14.060121297836304 , 13.96353268623352 , 13.929805278778076 , 13.962702989578247 , 14.239758253097534 , 13.87521743774414 , 13.919250726699829 , 13.919867277145386 , 13.87792444229126 , 20.354312419891357 , 14.171071290969849 , 14.366175889968872 , 14.007771492004395 , 14.012106657028198 , 13.970044374465942 , 13.875375509262085 , 14.041724681854248 , 14.140265464782715 , 13.870648860931396 , 20.272242784500122 , 13.906554937362671 , 13.76904845237732 , 13.89972972869873 , 14.081136703491211 , 13.873753309249878 , 13.966958045959473 , 13.93488597869873 , 13.981808423995972 , 14.099725484848022 , 20.60240387916565 , 13.819194078445435 , 13.968913316726685 , 13.975522756576538 , 13.723127365112305 , 13.905598163604736 , 13.746959209442139 , 13.844745635986328 , 13.769776821136475 , 14.19815969467163 , 20.311230421066284 , 13.885499715805054 , 13.984214544296265 , 14.008793830871582 , 13.839705228805542 , 13.904968500137329 , 13.920186042785645 , 13.846561670303345 , 13.9944589138031 , 13.972723007202148 , 21.372126579284668 , 14.022543668746948 , 14.166536808013916 , 13.925049543380737 , 14.266606092453003 , 14.282795190811157 , 14.170862436294556 , 14.3901686668396 , 14.242382049560547 , 14.094773530960083 , 21.326140880584717 , 14.150848627090454 , 14.093705177307129 , 14.152188301086426 , 13.98754096031189 , 14.000551223754883 , 14.030958414077759 , 14.439499616622925 , 14.346718311309814 , 14.119403839111328 , 21.15487051010132 , 14.401557445526123 , 14.26781940460205 , 14.13701605796814 , 14.20946192741394 , 13.878366708755493 , 13.946795225143433 , 13.850834608078003 , 14.190539360046387 , 14.320265531539917 , 21.330243349075317 , 14.535918474197388 , 14.068499088287354 , 14.093889713287354 , 14.08852219581604 , 13.938473224639893 , 14.212123155593872 , 14.107277870178223 , 14.241947650909424 , 14.222635507583618 , 21.2284893989563 , 14.008768320083618 , 14.160589933395386 , 14.008770227432251 , 14.309379577636719 , 13.942097663879395 , 14.113994836807251 , 13.987308502197266 , 14.083645820617676 , 14.2633957862854 , 21.289808750152588 , 14.074010372161865 , 14.24412488937378 , 14.218344926834106 , 14.195748329162598 , 14.270131826400757 , 14.004542589187622 , 14.185185432434082 , 14.276151895523071 , 14.225687503814697 , 21.531561136245728 , 14.297961711883545 , 14.146096229553223 , 14.158118724822998 , 14.288376092910767 , 14.13472604751587 , 14.015950679779053 , 14.144433975219727 , 14.0819730758667 , 14.294182538986206 , 21.473081827163696 , 14.17824912071228 , 14.129487991333008 , 14.19097089767456 , 14.14760684967041 , 14.106032609939575 , 14.044267177581787 , 14.211361169815063 , 14.129121780395508 , 14.067530632019043 , 21.213197469711304 , 14.008857011795044 , 14.214811563491821 , 13.975260734558105 , 14.164761304855347 , 14.062893390655518 , 14.242885112762451 , 13.985635042190552 , 14.084496259689331 , 14.03378701210022 , 21.784634590148926 , 14.076111316680908 , 14.082147121429443 , 14.135836124420166 , 14.221118688583374 , 14.278396368026733 , 14.174939632415771 , 14.304367542266846 , 13.993255615234375 , 14.218320369720459 , 21.56951904296875 , 13.933191776275635 , 13.901384115219116 , 14.03983473777771 , 14.377362966537476 , 14.232578039169312 , 14.695645332336426 , 15.31609034538269 , 15.019237995147705 , 15.069488286972046 , 23.09136438369751 , 15.141382932662964 , 14.5005202293396 , 15.088400602340698 , 14.933010339736938 , 14.731821060180664 , 14.742217063903809 , 14.942081212997437 , 15.126428127288818 , 14.84423565864563 , 23.152049779891968 , 14.850067377090454 , 15.020190477371216 , 14.858474016189575 , 14.953161716461182 , 14.805821657180786 , 14.818180322647095 , 14.94545865058899 , 14.558407068252563 , 14.961048603057861 , 23.1430721282959 , 14.976728677749634 , 14.779884338378906 , 14.805684804916382 , 15.048420190811157 , 14.642666339874268 , 14.70893669128418 , 15.109180450439453 , 15.112006902694702 , 14.98732042312622
+[02/20 16:34:43] train_sl INFO: GradMatchPB-Warm
+[02/20 16:34:43] train_sl INFO: ---------------------------------------------------------------------
+[02/20 16:34:43] train_sl INFO: Test Accuracy: 0.6479 , 0.684 , 0.7312 , 0.728 , 0.739 , 0.7539 , 0.8372 , 0.8413 , 0.842 , 0.8391 , 0.8408 , 0.8371 , 0.8453 , 0.8679 , 0.8718 , 0.8697 , 0.8703 , 0.8738 , 0.8713 , 0.8723
+[02/20 16:34:43] train_sl INFO: Total time taken by GradMatchPB-Warm = 2976.3061 
+[02/20 16:34:43] train_sl INFO: Time: 23.05875515937805 , 22.524141550064087 , 22.321362257003784 , 22.382548332214355 , 22.421671390533447 , 23.110104084014893 , 0.0004961490631103516 , 0.0001270771026611328 , 0.0003521442413330078 , 0.00012183189392089844 , 20.427154302597046 , 14.053305387496948 , 13.959355115890503 , 13.932859182357788 , 13.980617046356201 , 14.213599681854248 , 13.885987043380737 , 13.930004358291626 , 13.902155637741089 , 13.887654542922974 , 20.348573207855225 , 14.183323621749878 , 14.367537260055542 , 13.997585535049438 , 14.002968788146973 , 13.998040914535522 , 13.834890842437744 , 14.038779020309448 , 14.153227090835571 , 13.910392045974731 , 20.238179683685303 , 13.917303323745728 , 13.788505554199219 , 13.873881340026855 , 14.04738163948059 , 13.93528151512146 , 13.937556743621826 , 13.951161861419678 , 13.96389126777649 , 14.084007501602173 , 20.598912954330444 , 13.823601484298706 , 13.968188047409058 , 13.945360898971558 , 13.741984128952026 , 13.920468091964722 , 13.718083620071411 , 13.873920440673828 , 13.787087678909302 , 14.107513427734375 , 20.36321520805359 , 13.867818117141724 , 13.992077350616455 , 14.010801315307617 , 13.83006501197815 , 13.908353805541992 , 13.902416467666626 , 13.843184232711792 , 14.016995429992676 , 13.967149019241333 , 21.354534149169922 , 14.036798238754272 , 14.170267105102539 , 13.925070524215698 , 14.26273512840271 , 14.279414892196655 , 14.180713653564453 , 14.374475240707397 , 14.25356936454773 , 14.084839582443237 , 21.267481327056885 , 14.131110906600952 , 14.073312044143677 , 14.195457220077515 , 13.977375745773315 , 14.021126985549927 , 14.050320863723755 , 14.401610136032104 , 14.380890130996704 , 14.04285454750061 , 21.170377254486084 , 14.417522430419922 , 14.18684196472168 , 14.16512155532837 , 14.23114275932312 , 13.86021113395691 , 13.952894449234009 , 13.849056005477905 , 14.200329303741455 , 14.338005065917969 , 21.315313577651978 , 14.592434644699097 , 14.061593055725098 , 14.10546875 , 14.070023775100708 , 13.886080980300903 , 14.255717754364014 , 14.11149001121521 , 14.256246089935303 , 14.193824052810669 , 21.275787591934204 , 14.00265097618103 , 14.191715240478516 , 13.97800064086914 , 14.294224739074707 , 13.981915950775146 , 14.092503070831299 , 14.008239984512329 , 14.047255277633667 , 14.264702081680298 , 21.169304609298706 , 14.174156188964844 , 14.17233157157898 , 14.254050016403198 , 14.115027666091919 , 14.258949279785156 , 14.03867769241333 , 14.197091579437256 , 14.270723581314087 , 14.230149030685425 , 21.477593183517456 , 14.339423179626465 , 14.164186477661133 , 14.157511949539185 , 14.294193506240845 , 14.099308013916016 , 14.004194259643555 , 14.205055713653564 , 14.076936960220337 , 14.302768468856812 , 21.38362455368042 , 14.200913667678833 , 14.121409893035889 , 14.194304466247559 , 14.137063026428223 , 14.112198114395142 , 14.058400869369507 , 14.165101289749146 , 14.169702053070068 , 14.0287344455719 , 21.222349405288696 , 14.032771110534668 , 14.177982807159424 , 13.962485074996948 , 14.175790309906006 , 14.076863765716553 , 14.253241777420044 , 13.99664044380188 , 14.06529974937439 , 14.000752687454224 , 21.807506322860718 , 14.096262454986572 , 14.086768865585327 , 14.057251453399658 , 14.308652639389038 , 14.27447247505188 , 14.130204677581787 , 14.356045722961426 , 14.008225679397583 , 14.208442687988281 , 21.55416703224182 , 13.96006464958191 , 13.935770273208618 , 14.034303426742554 , 14.341810941696167 , 14.28487515449524 , 14.470572233200073 , 15.485893487930298 , 15.045861721038818 , 14.97531270980835 , 22.984179973602295 , 15.150287628173828 , 14.521602869033813 , 15.0836660861969 , 14.899861335754395 , 14.734557151794434 , 14.756635427474976 , 14.983481884002686 , 15.113293886184692 , 14.799352645874023 , 23.823522567749023 , 15.011131763458252 , 14.923008441925049 , 14.841260194778442 , 14.959614038467407 , 14.810941696166992 , 14.789760828018188 , 14.967877626419067 , 14.54716181755066 , 14.988178491592407 , 23.096253633499146 , 15.07833981513977 , 14.674819469451904 , 14.77895474433899 , 14.992269039154053 , 14.72300100326538 , 14.698217153549194 , 15.085108757019043 , 15.14203143119812 , 15.001136541366577
+[02/20 16:34:43] train_sl INFO: Total time taken by GradMatchPB-Warm = 2976.4919 
+[02/20 16:35:14] train_sl INFO: DotMap(setting='SL', is_reg=False, dataset=DotMap(name='cifar10', datadir='/root/desc/datasets/cifar10', feature='dss', type='image'), dataloader=DotMap(shuffle=True, batch_size=128, pin_memory=True), model=DotMap(architecture='ResNet18', type='pre-defined', numclasses=10), ckpt=DotMap(is_load=False, is_save=True, dir='results/', save_every=20), loss=DotMap(type='CrossEntropyLoss', use_sigmoid=False), optimizer=DotMap(type='sgd', momentum=0.9, lr=0.1, weight_decay=0.0005, nesterov=True), scheduler=DotMap(type='multi_step'), dss_args=DotMap(type='GradMatchPB-Warm', fraction=0.6, select_every=10, lam=0, selection_type='PerBatch', v1=True, valid=False, eps=1e-100, linear_layer=True, kappa=0.05), train_args=DotMap(num_epochs=200, device='cuda', print_every=10, results_dir='results/', print_args=['tst_loss', 'tst_acc', 'time'], return_args=[], distributed=False, rank=-1, world_size=1, dist_backend='nccl'))
+[02/20 16:35:14] train_sl INFO: DotMap(setting='SL', is_reg=False, dataset=DotMap(name='cifar10', datadir='/root/desc/datasets/cifar10', feature='dss', type='image'), dataloader=DotMap(shuffle=True, batch_size=128, pin_memory=True), model=DotMap(architecture='ResNet18', type='pre-defined', numclasses=10), ckpt=DotMap(is_load=False, is_save=True, dir='results/', save_every=20), loss=DotMap(type='CrossEntropyLoss', use_sigmoid=False), optimizer=DotMap(type='sgd', momentum=0.9, lr=0.1, weight_decay=0.0005, nesterov=True), scheduler=DotMap(type='multi_step'), dss_args=DotMap(type='GradMatchPB-Warm', fraction=0.6, select_every=10, lam=0, selection_type='PerBatch', v1=True, valid=False, eps=1e-100, linear_layer=True, kappa=0.05), train_args=DotMap(num_epochs=200, device='cuda', print_every=10, results_dir='results/', print_args=['tst_loss', 'tst_acc', 'time'], return_args=[], distributed=False, rank=-1, world_size=1, dist_backend='nccl'))
+[02/20 16:41:51] train_sl INFO: Epoch: 10 , Test Loss: 1.1070823982238769 , Test Accuracy: 0.6252 , Timing: 0.00015234947204589844
+[02/20 16:41:55] train_sl INFO: Epoch: 10 , Test Loss: 1.0477636360168456 , Test Accuracy: 0.6389 , Timing: 0.00013566017150878906
+[02/20 16:42:04] train_sl INFO: Epoch: 11, GradMatch subset selection finished, takes 12.4960. 
+[02/20 16:42:06] train_sl INFO: Epoch: 11, GradMatch subset selection finished, takes 11.6061. 
+[02/20 16:48:35] train_sl INFO: Epoch: 20 , Test Loss: 0.8500624305725097 , Test Accuracy: 0.7079 , Timing: 38.98826003074646
+[02/20 16:48:35] train_sl INFO: Model checkpoint saved at epoch: 20
+[02/20 16:48:37] train_sl INFO: Epoch: 20 , Test Loss: 0.888870008468628 , Test Accuracy: 0.6977 , Timing: 37.591485261917114
+[02/20 16:48:37] train_sl INFO: Model checkpoint saved at epoch: 20
+[02/20 16:48:48] train_sl INFO: Epoch: 21, GradMatch subset selection finished, takes 12.6103. 
+[02/20 16:48:49] train_sl INFO: Epoch: 21, GradMatch subset selection finished, takes 11.9706. 
+[02/20 16:55:18] train_sl INFO: Epoch: 30 , Test Loss: 0.7507372779846191 , Test Accuracy: 0.7484 , Timing: 38.96192932128906
+[02/20 16:55:20] train_sl INFO: Epoch: 30 , Test Loss: 0.8228272514343262 , Test Accuracy: 0.7233 , Timing: 37.27953624725342
+[02/20 16:55:31] train_sl INFO: Epoch: 31, GradMatch subset selection finished, takes 12.4326. 
+[02/20 16:55:32] train_sl INFO: Epoch: 31, GradMatch subset selection finished, takes 11.9668. 
+[02/20 17:02:00] train_sl INFO: Epoch: 40 , Test Loss: 0.8158398887634277 , Test Accuracy: 0.7392 , Timing: 39.01503586769104
+[02/20 17:02:01] train_sl INFO: Model checkpoint saved at epoch: 40
+[02/20 17:02:03] train_sl INFO: Epoch: 40 , Test Loss: 0.7883303703308105 , Test Accuracy: 0.7357 , Timing: 38.76330780982971
+[02/20 17:02:03] train_sl INFO: Model checkpoint saved at epoch: 40
+[02/20 17:02:14] train_sl INFO: Epoch: 41, GradMatch subset selection finished, takes 12.7098. 
+[02/20 17:02:15] train_sl INFO: Epoch: 41, GradMatch subset selection finished, takes 11.7396. 
+[02/20 17:08:45] train_sl INFO: Epoch: 50 , Test Loss: 0.8433382293701172 , Test Accuracy: 0.7248 , Timing: 38.472508668899536
+[02/20 17:08:46] train_sl INFO: Epoch: 50 , Test Loss: 0.7742328826904297 , Test Accuracy: 0.7431 , Timing: 38.12170124053955
+[02/20 17:08:59] train_sl INFO: Epoch: 51, GradMatch subset selection finished, takes 13.8196. 
+[02/20 17:09:00] train_sl INFO: Epoch: 51, GradMatch subset selection finished, takes 13.6456. 
+[02/20 17:15:29] train_sl INFO: Epoch: 60 , Test Loss: 0.9521370063781738 , Test Accuracy: 0.6911 , Timing: 38.202290534973145
+[02/20 17:15:30] train_sl INFO: Model checkpoint saved at epoch: 60
+[02/20 17:15:30] train_sl INFO: Epoch: 60 , Test Loss: 0.7059697715759278 , Test Accuracy: 0.7657 , Timing: 38.36765480041504
+[02/20 17:15:31] train_sl INFO: Model checkpoint saved at epoch: 60
+[02/20 17:15:44] train_sl INFO: Epoch: 61, GradMatch subset selection finished, takes 14.5218. 
+[02/20 17:15:45] train_sl INFO: Epoch: 61, GradMatch subset selection finished, takes 14.2827. 
+[02/20 17:22:16] train_sl INFO: Epoch: 70 , Test Loss: 0.49490183963775636 , Test Accuracy: 0.8361 , Timing: 39.15000534057617
+[02/20 17:22:18] train_sl INFO: Epoch: 70 , Test Loss: 0.4966654441833496 , Test Accuracy: 0.8324 , Timing: 38.75744390487671
+[02/20 17:22:29] train_sl INFO: Epoch: 71, GradMatch subset selection finished, takes 13.5256. 
+[02/20 17:22:31] train_sl INFO: Epoch: 71, GradMatch subset selection finished, takes 13.0749. 
+[02/20 17:29:05] train_sl INFO: Epoch: 80 , Test Loss: 0.4954680881500244 , Test Accuracy: 0.8391 , Timing: 38.851961612701416
+[02/20 17:29:06] train_sl INFO: Model checkpoint saved at epoch: 80
+[02/20 17:29:06] train_sl INFO: Epoch: 80 , Test Loss: 0.4808909105300903 , Test Accuracy: 0.8449 , Timing: 39.00942397117615
+[02/20 17:29:06] train_sl INFO: Model checkpoint saved at epoch: 80
+[02/20 17:29:20] train_sl INFO: Epoch: 81, GradMatch subset selection finished, takes 14.3127. 
+[02/20 17:29:21] train_sl INFO: Epoch: 81, GradMatch subset selection finished, takes 14.3667. 
+[02/20 17:35:56] train_sl INFO: Epoch: 90 , Test Loss: 0.4870584587097168 , Test Accuracy: 0.847 , Timing: 39.122828006744385
+[02/20 17:35:56] train_sl INFO: Epoch: 90 , Test Loss: 0.5163350717544556 , Test Accuracy: 0.8364 , Timing: 40.359240770339966
+[02/20 17:36:10] train_sl INFO: Epoch: 91, GradMatch subset selection finished, takes 14.5549. 
+[02/20 17:36:11] train_sl INFO: Epoch: 91, GradMatch subset selection finished, takes 14.5348. 
+[02/20 17:42:45] train_sl INFO: Epoch: 100 , Test Loss: 0.5215503923416138 , Test Accuracy: 0.8334 , Timing: 39.423694372177124
+[02/20 17:42:46] train_sl INFO: Model checkpoint saved at epoch: 100
+[02/20 17:42:46] train_sl INFO: Epoch: 100 , Test Loss: 0.5206376457214356 , Test Accuracy: 0.8347 , Timing: 39.555368423461914
+[02/20 17:42:46] train_sl INFO: Model checkpoint saved at epoch: 100
+[02/20 17:43:00] train_sl INFO: Epoch: 101, GradMatch subset selection finished, takes 14.2297. 
+[02/20 17:43:00] train_sl INFO: Epoch: 101, GradMatch subset selection finished, takes 14.0255. 
+[02/20 17:49:37] train_sl INFO: Epoch: 110 , Test Loss: 0.5410976638793945 , Test Accuracy: 0.8331 , Timing: 39.6449990272522
+[02/20 17:49:39] train_sl INFO: Epoch: 110 , Test Loss: 0.5170508388519287 , Test Accuracy: 0.8436 , Timing: 38.56998586654663
+[02/20 17:49:51] train_sl INFO: Epoch: 111, GradMatch subset selection finished, takes 13.8550. 
+[02/20 17:49:53] train_sl INFO: Epoch: 111, GradMatch subset selection finished, takes 13.6687. 
+[02/20 17:56:29] train_sl INFO: Epoch: 120 , Test Loss: 0.507296932220459 , Test Accuracy: 0.8414 , Timing: 38.82007193565369
+[02/20 17:56:30] train_sl INFO: Model checkpoint saved at epoch: 120
+[02/20 17:56:32] train_sl INFO: Epoch: 120 , Test Loss: 0.5252236957550049 , Test Accuracy: 0.838 , Timing: 37.51047897338867
+[02/20 17:56:32] train_sl INFO: Model checkpoint saved at epoch: 120
+[02/20 17:56:42] train_sl INFO: Epoch: 121, GradMatch subset selection finished, takes 12.0736. 
+[02/20 17:56:43] train_sl INFO: Epoch: 121, GradMatch subset selection finished, takes 11.2914. 
+[02/20 18:03:18] train_sl INFO: Epoch: 130 , Test Loss: 0.5378630809783935 , Test Accuracy: 0.8368 , Timing: 39.87981343269348
+[02/20 18:03:19] train_sl INFO: Epoch: 130 , Test Loss: 0.5495829082489013 , Test Accuracy: 0.8332 , Timing: 39.63349509239197
+[02/20 18:03:31] train_sl INFO: Epoch: 131, GradMatch subset selection finished, takes 13.6135. 
+[02/20 18:03:32] train_sl INFO: Epoch: 131, GradMatch subset selection finished, takes 13.1830. 
+[02/20 18:10:11] train_sl INFO: Epoch: 140 , Test Loss: 0.452511728477478 , Test Accuracy: 0.8638 , Timing: 39.63994121551514
+[02/20 18:10:12] train_sl INFO: Model checkpoint saved at epoch: 140
+[02/20 18:10:13] train_sl INFO: Epoch: 140 , Test Loss: 0.4364697292327881 , Test Accuracy: 0.8655 , Timing: 37.99832320213318
+[02/20 18:10:13] train_sl INFO: Model checkpoint saved at epoch: 140
+[02/20 18:10:24] train_sl INFO: Epoch: 141, GradMatch subset selection finished, takes 12.5461. 
+[02/20 18:10:26] train_sl INFO: Epoch: 141, GradMatch subset selection finished, takes 12.5970. 
+[02/20 18:17:08] train_sl INFO: Epoch: 150 , Test Loss: 0.44705299625396727 , Test Accuracy: 0.8696 , Timing: 39.4914493560791
+[02/20 18:17:09] train_sl INFO: Epoch: 150 , Test Loss: 0.43161375675201413 , Test Accuracy: 0.87 , Timing: 38.914905309677124
+[02/20 18:17:21] train_sl INFO: Epoch: 151, GradMatch subset selection finished, takes 13.3478. 
+[02/20 18:17:22] train_sl INFO: Epoch: 151, GradMatch subset selection finished, takes 12.3874. 
+[02/20 18:24:01] train_sl INFO: Epoch: 160 , Test Loss: 0.45315663719177246 , Test Accuracy: 0.8685 , Timing: 40.206801652908325
+[02/20 18:24:01] train_sl INFO: Model checkpoint saved at epoch: 160
+[02/20 18:24:02] train_sl INFO: Epoch: 160 , Test Loss: 0.45813340740203856 , Test Accuracy: 0.8684 , Timing: 38.175607442855835
+[02/20 18:24:03] train_sl INFO: Model checkpoint saved at epoch: 160
+[02/20 18:24:15] train_sl INFO: Epoch: 161, GradMatch subset selection finished, takes 13.5573. 
+[02/20 18:24:16] train_sl INFO: Epoch: 161, GradMatch subset selection finished, takes 13.2038. 
+[02/20 18:30:59] train_sl INFO: Epoch: 170 , Test Loss: 0.46636818351745607 , Test Accuracy: 0.8691 , Timing: 40.777047872543335
+[02/20 18:31:01] train_sl INFO: Epoch: 170 , Test Loss: 0.4586757694244385 , Test Accuracy: 0.8684 , Timing: 40.47693920135498
+[02/20 18:31:12] train_sl INFO: Epoch: 171, GradMatch subset selection finished, takes 12.8734. 
+[02/20 18:31:13] train_sl INFO: Epoch: 171, GradMatch subset selection finished, takes 12.9348. 
+[02/20 18:37:53] train_sl INFO: Epoch: 180 , Test Loss: 0.473219803237915 , Test Accuracy: 0.8692 , Timing: 39.74998378753662
+[02/20 18:37:53] train_sl INFO: Model checkpoint saved at epoch: 180
+[02/20 18:37:54] train_sl INFO: Epoch: 180 , Test Loss: 0.4641416568756104 , Test Accuracy: 0.8682 , Timing: 38.84435439109802
+[02/20 18:37:55] train_sl INFO: Model checkpoint saved at epoch: 180
+[02/20 18:38:08] train_sl INFO: Epoch: 181, GradMatch subset selection finished, takes 14.2357. 
+[02/20 18:38:08] train_sl INFO: Epoch: 181, GradMatch subset selection finished, takes 13.6221. 
+[02/20 18:44:54] train_sl INFO: Epoch: 190 , Test Loss: 0.47820892925262454 , Test Accuracy: 0.8725 , Timing: 41.44287824630737
+[02/20 18:44:55] train_sl INFO: Epoch: 190 , Test Loss: 0.48616665649414065 , Test Accuracy: 0.8677 , Timing: 39.607322692871094
+[02/20 18:45:08] train_sl INFO: Epoch: 191, GradMatch subset selection finished, takes 14.6661. 
+[02/20 18:45:09] train_sl INFO: Epoch: 191, GradMatch subset selection finished, takes 14.4176. 
+[02/20 18:51:46] train_sl INFO: Epoch: 200 , Test Loss: 0.4881019088745117 , Test Accuracy: 0.8693 , Timing: 39.497376918792725
+[02/20 18:51:47] train_sl INFO: Model checkpoint saved at epoch: 200
+[02/20 18:51:47] train_sl INFO: GradMatchPB-Warm Selection Run---------------------------------
+[02/20 18:51:47] train_sl INFO: Final SubsetTrn: 0.076765
+[02/20 18:51:47] train_sl INFO: Test Loss: 0.49, Test Accuracy: 0.87
+[02/20 18:51:47] train_sl INFO: ---------------------------------------------------------------------
+[02/20 18:51:47] train_sl INFO: GradMatchPB-Warm
+[02/20 18:51:47] train_sl INFO: ---------------------------------------------------------------------
+[02/20 18:51:47] train_sl INFO: Test Accuracy: 0.6252 , 0.7079 , 0.7484 , 0.7392 , 0.7248 , 0.7657 , 0.8361 , 0.8449 , 0.8364 , 0.8334 , 0.8331 , 0.8414 , 0.8368 , 0.8638 , 0.8696 , 0.8684 , 0.8691 , 0.8692 , 0.8725 , 0.8693
+[02/20 18:51:47] train_sl INFO: Time: 63.617963552474976 , 65.22303891181946 , 63.114773988723755 , 64.95563554763794 , 64.57051491737366 , 65.14829611778259 , 0.0004105567932128906 , 0.00016498565673828125 , 0.0001552104949951172 , 0.00015234947204589844 , 50.26237678527832 , 38.149555683135986 , 38.69530272483826 , 39.22174906730652 , 38.89337372779846 , 39.69873929023743 , 38.99860167503357 , 39.078731060028076 , 38.52941679954529 , 38.98826003074646 , 50.237683057785034 , 39.47160506248474 , 38.99931812286377 , 38.59540939331055 , 39.04542422294617 , 39.06334853172302 , 38.626880168914795 , 39.1594979763031 , 38.36148190498352 , 38.96192932128906 , 50.36860537528992 , 38.7483856678009 , 38.96702027320862 , 38.77952265739441 , 38.799970626831055 , 38.22209429740906 , 38.78398370742798 , 38.87823128700256 , 38.822598934173584 , 39.01503586769104 , 50.89008092880249 , 39.51497530937195 , 39.46947193145752 , 39.23944306373596 , 38.57202100753784 , 38.910035371780396 , 38.67883610725403 , 39.92312288284302 , 38.27397704124451 , 38.472508668899536 , 51.86550283432007 , 39.51737642288208 , 39.16747164726257 , 38.520944595336914 , 39.018503189086914 , 39.68869709968567 , 39.60971665382385 , 38.854902267456055 , 38.628164529800415 , 38.36765480041504 , 52.966867208480835 , 39.50049328804016 , 38.90943694114685 , 38.324918031692505 , 38.22734880447388 , 38.907952070236206 , 38.93493366241455 , 38.8798131942749 , 39.08338117599487 , 39.15000534057617 , 53.192360401153564 , 38.84806180000305 , 40.064104318618774 , 38.880866289138794 , 39.42033529281616 , 39.1137170791626 , 39.08067750930786 , 39.6200053691864 , 40.59986209869385 , 39.00942397117615 , 54.10066843032837 , 38.374213218688965 , 38.72516846656799 , 39.53910732269287 , 40.28570747375488 , 38.79366326332092 , 39.277836084365845 , 39.17990827560425 , 39.2630569934845 , 40.359240770339966 , 53.78149771690369 , 39.12897610664368 , 38.816831827163696 , 39.408231258392334 , 38.99803590774536 , 39.567808389663696 , 39.389084577560425 , 38.43379783630371 , 39.56866526603699 , 39.423694372177124 , 53.2170352935791 , 39.47055792808533 , 39.47538733482361 , 39.510993003845215 , 39.73545169830322 , 39.75928258895874 , 39.47935438156128 , 38.756977558135986 , 40.148773193359375 , 39.6449990272522 , 52.766841173172 , 39.5317907333374 , 40.15961527824402 , 39.5471727848053 , 39.78444147109985 , 40.22030830383301 , 40.103124380111694 , 38.715697288513184 , 39.44335579872131 , 38.82007193565369 , 49.70583987236023 , 39.56024241447449 , 40.043498277664185 , 39.34762907028198 , 39.445178270339966 , 39.37318181991577 , 39.484211444854736 , 38.61350917816162 , 40.12763214111328 , 39.87981343269348 , 52.27961206436157 , 39.08466625213623 , 39.48163723945618 , 39.478418827056885 , 40.23666024208069 , 40.21839690208435 , 39.5473415851593 , 39.74446725845337 , 41.31320858001709 , 39.63994121551514 , 51.34893441200256 , 40.18827414512634 , 39.895183801651 , 39.914647579193115 , 41.298508167266846 , 39.273385763168335 , 40.33709406852722 , 41.38790965080261 , 40.18116879463196 , 39.4914493560791 , 52.52257037162781 , 41.139835357666016 , 40.25999426841736 , 38.791526079177856 , 40.999024629592896 , 40.20264673233032 , 39.80766797065735 , 40.54780983924866 , 39.85890007019043 , 38.175607442855835 , 51.81915497779846 , 40.250383377075195 , 39.93284201622009 , 39.70884847640991 , 39.64698100090027 , 40.28014779090881 , 40.364272117614746 , 39.88751769065857 , 40.350815534591675 , 40.777047872543335 , 53.45915651321411 , 41.67514157295227 , 40.49809813499451 , 39.97630715370178 , 38.8817412853241 , 39.235201597213745 , 40.0836296081543 , 38.70328950881958 , 39.35176062583923 , 39.74998378753662 , 52.84720778465271 , 39.40000772476196 , 41.587586879730225 , 40.02619433403015 , 39.685946226119995 , 41.09292554855347 , 41.36375904083252 , 39.94027519226074 , 40.822447299957275 , 41.44287824630737 , 54.25226354598999 , 39.464927434921265 , 40.632561683654785 , 39.20492362976074 , 38.858975648880005 , 39.242287397384644 , 39.209588050842285 , 40.51884913444519 , 39.83696413040161 , 39.497376918792725
+[02/20 18:51:47] train_sl INFO: Total time taken by GradMatchPB-Warm = 8131.4471 
+[02/20 18:51:47] train_sl INFO: Epoch: 200 , Test Loss: 0.4898069240570068 , Test Accuracy: 0.8681 , Timing: 38.428712129592896
+[02/20 18:51:48] train_sl INFO: Model checkpoint saved at epoch: 200
+[02/20 18:51:48] train_sl INFO: GradMatchPB-Warm Selection Run---------------------------------
+[02/20 18:51:48] train_sl INFO: Final SubsetTrn: 0.076101
+[02/20 18:51:48] train_sl INFO: Test Loss: 0.49, Test Accuracy: 0.87
+[02/20 18:51:48] train_sl INFO: ---------------------------------------------------------------------
+[02/20 18:51:48] train_sl INFO: GradMatchPB-Warm
+[02/20 18:51:48] train_sl INFO: ---------------------------------------------------------------------
+[02/20 18:51:48] train_sl INFO: Test Accuracy: 0.6389 , 0.6977 , 0.7233 , 0.7357 , 0.7431 , 0.6911 , 0.8324 , 0.8391 , 0.847 , 0.8347 , 0.8436 , 0.838 , 0.8332 , 0.8655 , 0.87 , 0.8685 , 0.8684 , 0.8682 , 0.8677 , 0.8681
+[02/20 18:51:48] train_sl INFO: Time: 65.60382390022278 , 64.99356961250305 , 66.28404140472412 , 64.78929328918457 , 64.7363793849945 , 64.04445838928223 , 0.0002944469451904297 , 0.00014972686767578125 , 0.00023102760314941406 , 0.00013566017150878906 , 50.65626502037048 , 38.182920932769775 , 39.75492238998413 , 39.08829879760742 , 39.360413789749146 , 38.03558111190796 , 39.59541702270508 , 38.063042402267456 , 39.61159706115723 , 37.591485261917114 , 51.393516540527344 , 38.962828159332275 , 39.01398468017578 , 38.70764350891113 , 39.306575298309326 , 39.1179895401001 , 38.760725259780884 , 39.17978119850159 , 39.30655312538147 , 37.27953624725342 , 50.545830488204956 , 38.895333766937256 , 39.11028814315796 , 39.38957762718201 , 38.8207426071167 , 38.999581813812256 , 38.6819326877594 , 38.4955837726593 , 38.240665674209595 , 38.76330780982971 , 50.43913388252258 , 38.912248849868774 , 38.72993612289429 , 38.482545137405396 , 39.682923555374146 , 39.03382062911987 , 39.46764588356018 , 38.59564805030823 , 39.220640897750854 , 38.12170124053955 , 52.69577646255493 , 39.03130912780762 , 38.69597816467285 , 38.668416023254395 , 39.45064067840576 , 38.47518301010132 , 38.16764736175537 , 39.24843430519104 , 38.49051022529602 , 38.202290534973145 , 53.51203489303589 , 38.63632583618164 , 39.097373485565186 , 39.54850101470947 , 39.50361680984497 , 39.198930740356445 , 38.53296208381653 , 39.25453448295593 , 39.608314037323 , 38.75744390487671 , 52.987632751464844 , 39.490500688552856 , 39.39700531959534 , 38.85661315917969 , 39.242857217788696 , 39.69723844528198 , 38.459840297698975 , 39.54805397987366 , 38.78861212730408 , 38.851961612701416 , 52.875962018966675 , 40.09947443008423 , 39.32432723045349 , 39.87729358673096 , 38.93537902832031 , 40.04819893836975 , 38.91996192932129 , 39.41646456718445 , 39.16824150085449 , 39.122828006744385 , 53.72743511199951 , 38.9018292427063 , 39.41942358016968 , 40.08981895446777 , 39.24364948272705 , 39.45490264892578 , 39.187763690948486 , 39.21885633468628 , 38.42430806159973 , 39.555368423461914 , 53.364343881607056 , 39.49165391921997 , 38.976093769073486 , 39.03918480873108 , 40.44100379943848 , 40.39833927154541 , 39.43721413612366 , 41.10149049758911 , 39.965800285339355 , 38.56998586654663 , 53.64057993888855 , 39.549830198287964 , 39.936036348342896 , 39.70857381820679 , 39.77196192741394 , 40.10829710960388 , 40.188382148742676 , 39.98813247680664 , 39.626015186309814 , 37.51047897338867 , 50.41881251335144 , 39.32355356216431 , 39.872164726257324 , 39.57997393608093 , 38.93446326255798 , 39.77496886253357 , 39.59230947494507 , 39.19633769989014 , 38.693819999694824 , 39.63349509239197 , 53.61887502670288 , 39.35441541671753 , 39.6010377407074 , 39.80392384529114 , 40.48645353317261 , 40.36287546157837 , 39.74791765213013 , 41.356974363327026 , 39.525654554367065 , 37.99832320213318 , 52.69006419181824 , 39.58058547973633 , 40.05468201637268 , 41.26627469062805 , 39.58664560317993 , 40.40761184692383 , 41.81196570396423 , 40.16977262496948 , 38.70901608467102 , 38.914905309677124 , 51.43348693847656 , 41.165000677108765 , 38.941321849823 , 39.813767194747925 , 39.617987394332886 , 39.67559790611267 , 39.3024320602417 , 38.70581603050232 , 40.58569264411926 , 40.206801652908325 , 52.93347907066345 , 39.753509283065796 , 40.67090463638306 , 40.39041709899902 , 39.66123580932617 , 41.99912762641907 , 40.88643765449524 , 39.840059995651245 , 40.6756956577301 , 40.47693920135498 , 53.765881299972534 , 40.15466809272766 , 39.50529098510742 , 40.723710775375366 , 40.21366882324219 , 39.17652678489685 , 39.072200536727905 , 39.63570284843445 , 40.0199670791626 , 38.84435439109802 , 52.63095474243164 , 40.69041681289673 , 42.19530272483826 , 39.75987505912781 , 39.839128732681274 , 40.641209840774536 , 40.857096433639526 , 40.07000374794006 , 41.73073625564575 , 39.607322692871094 , 55.09215569496155 , 40.03376841545105 , 40.41390323638916 , 39.195157527923584 , 39.31514382362366 , 39.383562088012695 , 38.794291734695435 , 39.6240439414978 , 39.60668754577637 , 38.428712129592896
+[02/20 18:51:48] train_sl INFO: Total time taken by GradMatchPB-Warm = 8135.7970 
+[02/20 23:06:42] train_sl INFO: DotMap(setting='SL', is_reg=False, dataset=DotMap(name='cifar10', datadir='/root/desc/datasets/cifar10', feature='dss', type='image'), dataloader=DotMap(shuffle=True, batch_size=128, pin_memory=True), model=DotMap(architecture='ResNet18', type='pre-defined', numclasses=10), ckpt=DotMap(is_load=False, is_save=True, dir='results/', save_every=20), loss=DotMap(type='CrossEntropyLoss', use_sigmoid=False), optimizer=DotMap(type='sgd', momentum=0.9, lr=0.1, weight_decay=0.0005, nesterov=True), scheduler=DotMap(type='multi_step'), dss_args=DotMap(type='GradMatchPB-Warm', fraction=0.6, select_every=10, lam=0, selection_type='PerBatch', v1=True, valid=False, eps=1e-100, linear_layer=True, kappa=0.05), train_args=DotMap(num_epochs=200, device='cuda', print_every=10, results_dir='results/', print_args=['tst_loss', 'tst_acc', 'time'], return_args=[], distributed=False, rank=-1, world_size=1, dist_backend='nccl'))
+[02/20 23:09:06] train_sl INFO: DotMap(setting='SL', is_reg=False, dataset=DotMap(name='cifar10', datadir='/root/desc/datasets/cifar10', feature='dss', type='image'), dataloader=DotMap(shuffle=True, batch_size=128, pin_memory=True), model=DotMap(architecture='ResNet18', type='pre-defined', numclasses=10), ckpt=DotMap(is_load=False, is_save=True, dir='results/', save_every=20), loss=DotMap(type='CrossEntropyLoss', use_sigmoid=False), optimizer=DotMap(type='sgd', momentum=0.9, lr=0.1, weight_decay=0.0005, nesterov=True), scheduler=DotMap(type='multi_step'), dss_args=DotMap(type='GradMatchPB-Warm', fraction=0.6, select_every=10, lam=0, selection_type='PerBatch', v1=True, valid=False, eps=1e-100, linear_layer=True, kappa=0.5), train_args=DotMap(num_epochs=200, device='cuda', print_every=10, results_dir='results/', print_args=['tst_loss', 'tst_acc', 'time'], return_args=[], distributed=False, rank=-1, world_size=1, dist_backend='nccl'))
+[02/20 23:10:11] train_sl INFO: DotMap(setting='SL', is_reg=False, dataset=DotMap(name='cifar10', datadir='/root/desc/datasets/cifar10', feature='dss', type='image'), dataloader=DotMap(shuffle=True, batch_size=128, pin_memory=True), model=DotMap(architecture='ResNet18', type='pre-defined', numclasses=10), ckpt=DotMap(is_load=False, is_save=True, dir='results/', save_every=20), loss=DotMap(type='CrossEntropyLoss', use_sigmoid=False), optimizer=DotMap(type='sgd', momentum=0.9, lr=0.1, weight_decay=0.0005, nesterov=True), scheduler=DotMap(type='multi_step'), dss_args=DotMap(type='GradMatchPB-Warm', fraction=0.6, select_every=10, lam=0, selection_type='PerBatch', v1=True, valid=False, eps=1e-100, linear_layer=True, kappa=0.5), train_args=DotMap(num_epochs=300, device='cuda', print_every=10, results_dir='results/', print_args=['tst_loss', 'tst_acc', 'time'], return_args=[], distributed=False, rank=-1, world_size=1, dist_backend='nccl'))
+[02/20 23:20:07] train_sl INFO: Epoch: 10 , Test Loss: 0.9540744842529297 , Test Accuracy: 0.6822 , Timing: 60.93745946884155
+[02/20 23:25:05] train_sl INFO: DotMap(setting='SL', is_reg=False, dataset=DotMap(name='cifar10', datadir='/root/desc/datasets/cifar10', feature='dss', type='image'), dataloader=DotMap(shuffle=True, batch_size=128, pin_memory=True), model=DotMap(architecture='ResNet18', type='pre-defined', numclasses=10), ckpt=DotMap(is_load=False, is_save=True, dir='results/', save_every=20), loss=DotMap(type='CrossEntropyLoss', use_sigmoid=False), optimizer=DotMap(type='sgd', momentum=0.9, lr=0.1, weight_decay=0.0005, nesterov=True), scheduler=DotMap(type='cifar_multi_step', milestones=[60, 120, 160], gamma=0.2), dss_args=DotMap(type='GradMatchPB-Warm', fraction=0.6, select_every=10, lam=0, selection_type='PerBatch', v1=True, valid=False, eps=1e-100, linear_layer=True, kappa=0.05), train_args=DotMap(num_epochs=200, device='cuda', print_every=10, results_dir='results/', print_args=['tst_loss', 'tst_acc', 'time'], return_args=[], distributed=False, rank=-1, world_size=1, dist_backend='nccl'))
+[02/20 23:30:52] train_sl INFO: Epoch: 10 , Test Loss: 0.9575122901916504 , Test Accuracy: 0.6669 , Timing: 0.00023031234741210938
+[02/20 23:31:03] train_sl INFO: Epoch: 11, GradMatch subset selection finished, takes 10.7124. 
+[02/20 23:37:01] train_sl INFO: Epoch: 20 , Test Loss: 0.9296968589782715 , Test Accuracy: 0.684 , Timing: 29.097514867782593
+[02/20 23:37:01] train_sl INFO: Model checkpoint saved at epoch: 20
+[02/20 23:37:10] train_sl INFO: Epoch: 21, GradMatch subset selection finished, takes 8.9648. 
+[02/20 23:41:26] train_sl INFO: Epoch: 30 , Test Loss: 0.807992109298706 , Test Accuracy: 0.7292 , Timing: 23.875272512435913
+[02/20 23:41:33] train_sl INFO: Epoch: 31, GradMatch subset selection finished, takes 7.5862. 
+[02/20 23:45:32] train_sl INFO: Epoch: 40 , Test Loss: 0.8674913803100586 , Test Accuracy: 0.7074 , Timing: 23.751070499420166
+[02/20 23:45:32] train_sl INFO: Model checkpoint saved at epoch: 40
+[02/20 23:45:40] train_sl INFO: Epoch: 41, GradMatch subset selection finished, takes 7.9563. 
+[02/20 23:49:39] train_sl INFO: Epoch: 50 , Test Loss: 0.7236969421386719 , Test Accuracy: 0.7528 , Timing: 23.52045750617981
+[02/20 23:49:47] train_sl INFO: Epoch: 51, GradMatch subset selection finished, takes 7.9562. 
+[02/20 23:53:47] train_sl INFO: Epoch: 60 , Test Loss: 0.8275933319091797 , Test Accuracy: 0.7354 , Timing: 23.681889533996582
+[02/20 23:53:48] train_sl INFO: Model checkpoint saved at epoch: 60
+[02/20 23:53:56] train_sl INFO: Epoch: 61, GradMatch subset selection finished, takes 8.3344. 
+[02/20 23:57:57] train_sl INFO: Epoch: 70 , Test Loss: 0.5304892555236816 , Test Accuracy: 0.8228 , Timing: 24.1027889251709
+[02/20 23:58:05] train_sl INFO: Epoch: 71, GradMatch subset selection finished, takes 8.0186. 
+[02/21 00:04:19] train_sl INFO: DotMap(setting='SL', is_reg=False, dataset=DotMap(name='cifar10', datadir='/root/desc/datasets/cifar10', feature='dss', type='image'), dataloader=DotMap(shuffle=True, batch_size=128, pin_memory=True), model=DotMap(architecture='ResNetLower', type='pre-defined', numclasses=10), ckpt=DotMap(is_load=False, is_save=True, dir='results/', save_every=20), loss=DotMap(type='CrossEntropyLoss', use_sigmoid=False), optimizer=DotMap(type='sgd', momentum=0.9, lr=0.1, weight_decay=0.0005, nesterov=True), scheduler=DotMap(type='cifar_multi_step', milestones=[60, 120, 160], gamma=0.2), dss_args=DotMap(type='GradMatchPB-Warm', fraction=0.6, select_every=10, lam=0, selection_type='PerBatch', v1=True, valid=False, eps=1e-100, linear_layer=True, kappa=0.05), train_args=DotMap(num_epochs=200, device='cuda', print_every=10, results_dir='results/', print_args=['tst_loss', 'tst_acc', 'time'], return_args=[], distributed=False, rank=-1, world_size=1, dist_backend='nccl'))
+[02/21 00:06:27] train_sl INFO: DotMap(setting='SL', is_reg=False, dataset=DotMap(name='cifar10', datadir='/root/desc/datasets/cifar10', feature='dss', type='image'), dataloader=DotMap(shuffle=True, batch_size=128, pin_memory=True), model=DotMap(architecture='ResNet18Lower', type='pre-defined', numclasses=10), ckpt=DotMap(is_load=False, is_save=True, dir='results/', save_every=20), loss=DotMap(type='CrossEntropyLoss', use_sigmoid=False), optimizer=DotMap(type='sgd', momentum=0.9, lr=0.1, weight_decay=0.0005, nesterov=True), scheduler=DotMap(type='cifar_multi_step', milestones=[60, 120, 160], gamma=0.2), dss_args=DotMap(type='GradMatchPB-Warm', fraction=0.6, select_every=10, lam=0, selection_type='PerBatch', v1=True, valid=False, eps=1e-100, linear_layer=True, kappa=0.05), train_args=DotMap(num_epochs=200, device='cuda', print_every=10, results_dir='results/', print_args=['tst_loss', 'tst_acc', 'time'], return_args=[], distributed=False, rank=-1, world_size=1, dist_backend='nccl'))
+[02/21 00:08:25] train_sl INFO: DotMap(setting='SL', is_reg=False, dataset=DotMap(name='cifar10', datadir='/root/desc/datasets/cifar10', feature='dss', type='image'), dataloader=DotMap(shuffle=True, batch_size=128, pin_memory=True), model=DotMap(architecture='ResNet18Lower', type='pre-defined', numclasses=10), ckpt=DotMap(is_load=False, is_save=True, dir='results/', save_every=20), loss=DotMap(type='CrossEntropyLoss', use_sigmoid=False), optimizer=DotMap(type='sgd', momentum=0.9, lr=0.1, weight_decay=0.0005, nesterov=True), scheduler=DotMap(type='cifar_multi_step', milestones=[60, 120, 160], gamma=0.2), dss_args=DotMap(type='GradMatchPB-Warm', fraction=0.6, select_every=10, lam=0, selection_type='PerBatch', v1=True, valid=False, eps=1e-100, linear_layer=True, kappa=0.05), train_args=DotMap(num_epochs=200, device='cuda', print_every=10, results_dir='results/', print_args=['tst_loss', 'tst_acc', 'time'], return_args=[], distributed=False, rank=-1, world_size=1, dist_backend='nccl'))
+[02/21 00:12:57] train_sl INFO: Epoch: 10 , Test Loss: 0.8231090827941895 , Test Accuracy: 0.7309 , Timing: 0.00012373924255371094
+[02/21 00:14:53] train_sl INFO: DotMap(setting='SL', is_reg=False, dataset=DotMap(name='cifar10', datadir='/root/desc/datasets/cifar10', feature='dss', type='image'), dataloader=DotMap(shuffle=True, batch_size=128, pin_memory=True), model=DotMap(architecture='ResNet18Lower', type='pre-defined', numclasses=10), ckpt=DotMap(is_load=False, is_save=True, dir='results/', save_every=20), loss=DotMap(type='CrossEntropyLoss', use_sigmoid=False), optimizer=DotMap(type='sgd', momentum=0.9, lr=0.1, weight_decay=0.0005, nesterov=True), scheduler=DotMap(type='cifar_multi_step', milestones=[60, 120, 160], gamma=0.2), dss_args=DotMap(type='GradMatchPB-Warm', fraction=0.6, select_every=10, lam=0, selection_type='PerBatch', v1=True, valid=False, eps=1e-100, linear_layer=True, kappa=0.05), train_args=DotMap(num_epochs=200, device='cuda', print_every=10, results_dir='results/', print_args=['tst_loss', 'tst_acc', 'time'], return_args=[], distributed=False, rank=-1, world_size=1, dist_backend='nccl'))
+[02/21 00:19:34] train_sl INFO: Epoch: 10 , Test Loss: 0.7738764175415039 , Test Accuracy: 0.75 , Timing: 0.0002512931823730469
+[02/21 00:27:18] train_sl INFO: DotMap(setting='SL', is_reg=False, dataset=DotMap(name='cifar10', datadir='/root/desc/datasets/cifar10', feature='dss', type='image'), dataloader=DotMap(shuffle=True, batch_size=128, pin_memory=True), model=DotMap(architecture='ResNet18Lower', type='pre-defined', numclasses=10), ckpt=DotMap(is_load=False, is_save=True, dir='results/', save_every=20), loss=DotMap(type='CrossEntropyLoss', use_sigmoid=False), optimizer=DotMap(type='sgd', momentum=0.9, lr=0.1, weight_decay=0.0005, nesterov=True), scheduler=DotMap(type='cifar_multi_step', milestones=[60, 120, 160], gamma=0.2), dss_args=DotMap(type='GradMatchPB-Warm', fraction=0.6, select_every=10, lam=0, selection_type='PerBatch', v1=True, valid=False, eps=1e-100, linear_layer=True, kappa=0.05), train_args=DotMap(num_epochs=200, device='cuda', print_every=10, results_dir='results/', print_args=['tst_loss', 'tst_acc', 'time'], return_args=[], distributed=False, rank=-1, world_size=1, dist_backend='nccl'))
+[02/21 00:28:41] train_sl INFO: DotMap(setting='SL', is_reg=False, dataset=DotMap(name='cifar10', datadir='/root/desc/datasets/cifar10', feature='dss', type='image'), dataloader=DotMap(shuffle=True, batch_size=128, pin_memory=True), model=DotMap(architecture='ResNet18', type='pre-defined', numclasses=10), ckpt=DotMap(is_load=False, is_save=True, dir='results/', save_every=20), loss=DotMap(type='CrossEntropyLoss', use_sigmoid=False), optimizer=DotMap(type='sgd', momentum=0.9, lr=0.1, weight_decay=0.0005, nesterov=True), scheduler=DotMap(type='cifar_multi_step', milestones=[60, 120, 160], gamma=0.2), dss_args=DotMap(type='GradMatchPB-Warm', fraction=0.6, select_every=10, lam=0, selection_type='PerBatch', v1=True, valid=False, eps=1e-100, linear_layer=True, kappa=0.05), train_args=DotMap(num_epochs=200, device='cuda', print_every=10, results_dir='results/', print_args=['tst_loss', 'tst_acc', 'time'], return_args=[], distributed=False, rank=-1, world_size=1, dist_backend='nccl'))
+[02/21 00:33:18] train_sl INFO: Epoch: 10 , Test Loss: 0.6435700016021728 , Test Accuracy: 0.7796 , Timing: 0.00011134147644042969
+[02/21 00:33:26] train_sl INFO: Epoch: 11, GradMatch subset selection finished, takes 8.2150. 
+[02/21 00:38:07] train_sl INFO: Epoch: 20 , Test Loss: 0.7551592712402344 , Test Accuracy: 0.7531 , Timing: 28.35434889793396
+[02/21 00:38:08] train_sl INFO: Model checkpoint saved at epoch: 20
+[02/21 00:38:16] train_sl INFO: Epoch: 21, GradMatch subset selection finished, takes 8.7172. 
+[02/21 00:42:49] train_sl INFO: Epoch: 30 , Test Loss: 0.7951731643676758 , Test Accuracy: 0.7786 , Timing: 26.963751077651978
+[02/21 00:42:58] train_sl INFO: Epoch: 31, GradMatch subset selection finished, takes 8.2817. 
+[02/21 00:47:33] train_sl INFO: Epoch: 40 , Test Loss: 0.6194831859588623 , Test Accuracy: 0.8015 , Timing: 27.017664432525635
+[02/21 00:47:33] train_sl INFO: Model checkpoint saved at epoch: 40
+[02/21 00:47:41] train_sl INFO: Epoch: 41, GradMatch subset selection finished, takes 7.7718. 
+[02/21 00:52:16] train_sl INFO: Epoch: 50 , Test Loss: 0.7787480339050293 , Test Accuracy: 0.7769 , Timing: 27.904385566711426
+[02/21 00:52:24] train_sl INFO: Epoch: 51, GradMatch subset selection finished, takes 8.3419. 
+[02/21 00:57:02] train_sl INFO: Epoch: 60 , Test Loss: 0.5064199172973632 , Test Accuracy: 0.835 , Timing: 28.530449151992798
+[02/21 00:57:02] train_sl INFO: Model checkpoint saved at epoch: 60
+[02/21 00:57:10] train_sl INFO: Epoch: 61, GradMatch subset selection finished, takes 8.1403. 
+[02/21 01:01:54] train_sl INFO: Epoch: 70 , Test Loss: 0.30335637855529785 , Test Accuracy: 0.9097 , Timing: 29.067387580871582
+[02/21 01:02:03] train_sl INFO: Epoch: 71, GradMatch subset selection finished, takes 8.4714. 
+[02/21 01:06:43] train_sl INFO: Epoch: 80 , Test Loss: 0.30675827503204345 , Test Accuracy: 0.908 , Timing: 26.76408576965332
+[02/21 01:06:44] train_sl INFO: Model checkpoint saved at epoch: 80
+[02/21 01:06:52] train_sl INFO: Epoch: 81, GradMatch subset selection finished, takes 8.1486. 
+[02/21 01:11:21] train_sl INFO: Epoch: 90 , Test Loss: 0.3474609691619873 , Test Accuracy: 0.9023 , Timing: 26.352296590805054
+[02/21 01:11:29] train_sl INFO: Epoch: 91, GradMatch subset selection finished, takes 8.0238. 
+[02/21 01:16:08] train_sl INFO: Epoch: 100 , Test Loss: 0.3952415895462036 , Test Accuracy: 0.8854 , Timing: 27.739023208618164
+[02/21 01:16:09] train_sl INFO: Model checkpoint saved at epoch: 100
+[02/21 01:16:17] train_sl INFO: Epoch: 101, GradMatch subset selection finished, takes 8.3004. 
+[02/21 01:20:49] train_sl INFO: Epoch: 110 , Test Loss: 0.33071468172073365 , Test Accuracy: 0.903 , Timing: 27.14602541923523
+[02/21 01:20:57] train_sl INFO: Epoch: 111, GradMatch subset selection finished, takes 8.0919. 
+[02/21 01:25:32] train_sl INFO: Epoch: 120 , Test Loss: 0.3522251815795898 , Test Accuracy: 0.8996 , Timing: 26.710859537124634
+[02/21 01:25:33] train_sl INFO: Model checkpoint saved at epoch: 120
+[02/21 01:25:41] train_sl INFO: Epoch: 121, GradMatch subset selection finished, takes 7.8843. 
+[02/21 01:30:14] train_sl INFO: Epoch: 130 , Test Loss: 0.21135222334861756 , Test Accuracy: 0.9428 , Timing: 27.353087425231934
+[02/21 01:30:22] train_sl INFO: Epoch: 131, GradMatch subset selection finished, takes 7.9419. 
+[02/21 01:34:56] train_sl INFO: Epoch: 140 , Test Loss: 0.212045206284523 , Test Accuracy: 0.9437 , Timing: 27.839369297027588
+[02/21 01:34:57] train_sl INFO: Model checkpoint saved at epoch: 140
+[02/21 01:35:05] train_sl INFO: Epoch: 141, GradMatch subset selection finished, takes 8.2321. 
+[02/21 01:39:45] train_sl INFO: Epoch: 150 , Test Loss: 0.22274807217121123 , Test Accuracy: 0.9415 , Timing: 28.386317014694214
+[02/21 01:39:54] train_sl INFO: Epoch: 151, GradMatch subset selection finished, takes 8.5610. 
+[02/21 01:44:34] train_sl INFO: Epoch: 160 , Test Loss: 0.215272088098526 , Test Accuracy: 0.9452 , Timing: 27.575875759124756
+[02/21 01:44:34] train_sl INFO: Model checkpoint saved at epoch: 160
+[02/21 01:44:42] train_sl INFO: Epoch: 161, GradMatch subset selection finished, takes 7.8203. 
+[02/21 01:49:20] train_sl INFO: Epoch: 170 , Test Loss: 0.2134858452796936 , Test Accuracy: 0.9458 , Timing: 27.859046459197998
+[02/21 01:49:29] train_sl INFO: Epoch: 171, GradMatch subset selection finished, takes 8.1255. 
+[02/21 01:54:13] train_sl INFO: Epoch: 180 , Test Loss: 0.20804758026599884 , Test Accuracy: 0.946 , Timing: 29.264358043670654
+[02/21 01:54:14] train_sl INFO: Model checkpoint saved at epoch: 180
+[02/21 01:54:21] train_sl INFO: Epoch: 181, GradMatch subset selection finished, takes 7.7263. 
+[02/21 01:59:07] train_sl INFO: Epoch: 190 , Test Loss: 0.2069112309217453 , Test Accuracy: 0.9468 , Timing: 28.257427215576172
+[02/21 01:59:16] train_sl INFO: Epoch: 191, GradMatch subset selection finished, takes 8.2174. 
+[02/21 02:03:59] train_sl INFO: Epoch: 200 , Test Loss: 0.20682599222660064 , Test Accuracy: 0.9478 , Timing: 29.09614658355713
+[02/21 02:03:59] train_sl INFO: Model checkpoint saved at epoch: 200
+[02/21 02:03:59] train_sl INFO: GradMatchPB-Warm Selection Run---------------------------------
+[02/21 02:03:59] train_sl INFO: Final SubsetTrn: 0.002909
+[02/21 02:03:59] train_sl INFO: Test Loss: 0.21, Test Accuracy: 0.95
+[02/21 02:03:59] train_sl INFO: ---------------------------------------------------------------------
+[02/21 02:03:59] train_sl INFO: GradMatchPB-Warm
+[02/21 02:03:59] train_sl INFO: ---------------------------------------------------------------------
+[02/21 02:03:59] train_sl INFO: Test Accuracy: 0.7796 , 0.7531 , 0.7786 , 0.8015 , 0.7769 , 0.835 , 0.9097 , 0.908 , 0.9023 , 0.8854 , 0.903 , 0.8996 , 0.9428 , 0.9437 , 0.9415 , 0.9452 , 0.9458 , 0.946 , 0.9468 , 0.9478
+[02/21 02:03:59] train_sl INFO: Time: 45.199336528778076 , 44.83119773864746 , 43.86253881454468 , 44.52007341384888 , 45.11223363876343 , 44.07905387878418 , 0.00016999244689941406 , 0.00011801719665527344 , 0.00015401840209960938 , 0.00011134147644042969 , 36.96386504173279 , 27.367510318756104 , 28.73990559577942 , 27.364940643310547 , 28.088271856307983 , 26.905144453048706 , 27.946595668792725 , 27.434569358825684 , 27.644997119903564 , 28.35434889793396 , 35.670881271362305 , 27.734437942504883 , 26.937747955322266 , 27.406075954437256 , 27.057570219039917 , 27.19678497314453 , 26.675983905792236 , 27.262311220169067 , 26.802666902542114 , 26.963751077651978 , 36.02586555480957 , 26.889779329299927 , 27.82760977745056 , 27.074058294296265 , 27.236667156219482 , 26.62845540046692 , 27.223050355911255 , 26.85921049118042 , 28.015250205993652 , 27.017664432525635 , 35.19637656211853 , 26.530125856399536 , 27.62074589729309 , 25.96509027481079 , 27.91285514831543 , 26.891448497772217 , 27.760550022125244 , 26.727794408798218 , 27.92858600616455 , 27.904385566711426 , 35.216070890426636 , 27.804229021072388 , 27.106399536132812 , 27.86944270133972 , 27.132684469223022 , 27.932595014572144 , 27.020891189575195 , 28.147850275039673 , 26.704946994781494 , 28.530449151992798 , 36.63471865653992 , 27.004843711853027 , 28.729466676712036 , 27.168636083602905 , 28.607551336288452 , 27.5044527053833 , 27.929502248764038 , 29.271512031555176 , 27.899193286895752 , 29.067387580871582 , 37.87151002883911 , 27.45378828048706 , 28.942699670791626 , 26.672088146209717 , 28.763229846954346 , 27.100611448287964 , 28.024304628372192 , 27.158890962600708 , 27.457860469818115 , 26.76408576965332 , 34.82969903945923 , 26.859098196029663 , 26.58348822593689 , 26.521383047103882 , 26.11033296585083 , 26.735045671463013 , 27.21495246887207 , 27.01628565788269 , 27.19736075401306 , 26.352296590805054 , 36.013211488723755 , 27.24544596672058 , 28.2852725982666 , 26.849213361740112 , 28.596858978271484 , 27.65998935699463 , 27.242120504379272 , 27.952356815338135 , 27.351949214935303 , 27.739023208618164 , 34.702881813049316 , 27.717227935791016 , 26.72333264350891 , 27.20808172225952 , 26.425346851348877 , 27.336039304733276 , 26.75789475440979 , 27.258394718170166 , 26.49271583557129 , 27.14602541923523 , 35.72462797164917 , 26.957216262817383 , 27.435203552246094 , 26.682987451553345 , 27.978074312210083 , 26.977992057800293 , 27.803168296813965 , 26.817302703857422 , 27.511139631271362 , 26.710859537124634 , 34.6527783870697 , 27.533216953277588 , 27.595845937728882 , 27.401989698410034 , 26.497709035873413 , 27.14130425453186 , 26.6669864654541 , 27.892169713974 , 26.695215463638306 , 27.353087425231934 , 34.50950884819031 , 27.139727115631104 , 26.85787868499756 , 27.315799236297607 , 26.363425493240356 , 27.390418529510498 , 26.736369371414185 , 28.083359718322754 , 27.447540044784546 , 27.839369297027588 , 37.38325095176697 , 26.997477054595947 , 28.042858839035034 , 27.1758394241333 , 27.835631132125854 , 28.19606900215149 , 27.09912395477295 , 28.28841209411621 , 26.919153928756714 , 28.386317014694214 , 36.531861305236816 , 27.655149698257446 , 27.91457438468933 , 27.146739959716797 , 28.079649686813354 , 26.600133657455444 , 29.05119824409485 , 27.74341082572937 , 27.94245934486389 , 27.575875759124756 , 34.43843913078308 , 28.14189100265503 , 27.46141028404236 , 28.37658166885376 , 27.000732421875 , 28.617549419403076 , 27.541648149490356 , 27.67408561706543 , 26.965465307235718 , 27.859046459197998 , 36.59873127937317 , 27.254469633102417 , 28.13925313949585 , 27.68395447731018 , 28.047574758529663 , 28.06031894683838 , 27.500686645507812 , 29.240548849105835 , 27.568153142929077 , 29.264358043670654 , 36.98267221450806 , 27.597620725631714 , 28.42100715637207 , 28.49612593650818 , 27.80991792678833 , 29.660565614700317 , 27.288958311080933 , 28.87807536125183 , 27.38353157043457 , 28.257427215576172 , 37.044397592544556 , 27.616644620895386 , 28.363017320632935 , 27.12404704093933 , 28.071933269500732 , 27.710509538650513 , 28.04773497581482 , 28.536566495895386 , 27.585935592651367 , 29.09614658355713
+[02/21 02:03:59] train_sl INFO: Total time taken by GradMatchPB-Warm = 5658.6593 
+[02/21 10:31:06] train_sl INFO: DotMap(setting='SL', is_reg=False, dataset=DotMap(name='cifar10', datadir='/root/desc/datasets/cifar10', feature='dss', type='image'), dataloader=DotMap(shuffle=True, batch_size=128, pin_memory=True), model=DotMap(architecture='ResNet18', type='pre-defined', numclasses=10), ckpt=DotMap(is_load=False, is_save=True, dir='results/', save_every=20), loss=DotMap(type='CrossEntropyLoss', use_sigmoid=False), optimizer=DotMap(type='sgd', momentum=0.9, lr=0.1, weight_decay=0.0005, nesterov=True), scheduler=DotMap(type='cifar_multi_step', milestones=[60, 120, 160], gamma=0.2), dss_args=DotMap(type='GradMatchPB-Warm', fraction=0.6, select_every=10, lam=0, selection_type='PerBatch', v1=True, valid=False, eps=1e-100, linear_layer=True, kappa=0.05), train_args=DotMap(num_epochs=200, device='cuda', print_every=10, results_dir='results/', print_args=['tst_loss', 'tst_acc', 'time'], return_args=[], distributed=True, rank=0, world_size=2, dist_backend='nccl'))
+[02/21 10:31:06] train_sl INFO: DotMap(setting='SL', is_reg=False, dataset=DotMap(name='cifar10', datadir='/root/desc/datasets/cifar10', feature='dss', type='image'), dataloader=DotMap(shuffle=True, batch_size=128, pin_memory=True), model=DotMap(architecture='ResNet18', type='pre-defined', numclasses=10), ckpt=DotMap(is_load=False, is_save=True, dir='results/', save_every=20), loss=DotMap(type='CrossEntropyLoss', use_sigmoid=False), optimizer=DotMap(type='sgd', momentum=0.9, lr=0.1, weight_decay=0.0005, nesterov=True), scheduler=DotMap(type='cifar_multi_step', milestones=[60, 120, 160], gamma=0.2), dss_args=DotMap(type='GradMatchPB-Warm', fraction=0.6, select_every=10, lam=0, selection_type='PerBatch', v1=True, valid=False, eps=1e-100, linear_layer=True, kappa=0.05), train_args=DotMap(num_epochs=200, device='cuda', print_every=10, results_dir='results/', print_args=['tst_loss', 'tst_acc', 'time'], return_args=[], distributed=True, rank=1, world_size=2, dist_backend='nccl'))
