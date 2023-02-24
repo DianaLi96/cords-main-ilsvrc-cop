@@ -195,7 +195,10 @@ clf.train()
 
 You can use the default configurations that we have provided in the configs folder, or you can make a custom configuration. For making your custom configuration file for training, please refer to [CORDS Configuration File Documentation](https://cords.readthedocs.io/en/latest/strategies/cords.configs.html).
 
-
+#### Runing code with distributed mode
+```
+CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 main.py
+```
 
 ## Applications
 
